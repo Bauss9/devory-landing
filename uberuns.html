@@ -1,0 +1,685 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Über Uns - Devory</title>
+  <script src="https://unpkg.com/lottie-web@latest/build/player/lottie.min.js"></script>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="devoryicon.png" type="image/x-icon">
+  <style>
+    /* Template-specific overrides */
+    .main {
+      height: 60vh !important;
+    }
+
+    .hero {
+      display: none;
+    }
+
+    .page-title-container {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+      z-index: 50;
+    }
+
+    .page-title {
+      font-size: clamp(2rem, 8vw, 4rem);
+      font-weight: 800;
+      color: #6f79a4;
+      text-shadow: 0 5px 20px rgba(0,0,0,0.1);
+      opacity: 0;
+      animation: fadeInUp 1s ease-out forwards;
+      animation-delay: 0.8s;
+    }
+
+    .nav-item.active {
+      color: #6f79a4;
+      font-weight: 600;
+    }
+
+    .nav-item.active::after {
+      width: 100%;
+    }
+  </style>
+</head>
+<body>
+  <div class="wrapper">
+    <div class="main" id="main">
+      <img src="ivorydevory.jpg" alt="Background Image" class="background-img" />
+
+      
+      <!-- Header -->
+      <header class="header" id="header">
+          <a href="index.html">
+
+        <img src="fefefefe.png" alt="Logo" class="logo" />
+        </a>
+        <nav class="nav">
+          <a href="index.html" class="nav-item">Home</a>
+          <a href="uberuns.html" class="nav-item">Über uns</a>
+          <a href="leistungen.html" class="nav-item">Leistungen</a>
+          <a href="projects.html" class="nav-item">Projekte</a>
+          <a href="contact.html" class="nav-item">Kontakt</a>
+        </nav>
+        
+        <a href="contact.html" class="contact-btn">Kontaktiere uns</a>
+      </header>
+
+            <!-- Page Title -->
+            <div class="page-title-container">
+              <h1 class="page-title">Über uns</h1>
+            </div>
+      
+    </div>
+
+    <!-- Story Section -->
+    <section class="story-section">
+      <div class="story-content">
+        <div class="story-text">
+          <div class="story-subtitle">UNSERE GESCHICHTE</div>
+          <h2 class="story-title">Wo Technologie auf Rechtssicherheit trifft</h2>
+          <p class="story-description">
+            Devory entstand aus einer einfachen Erkenntnis: Die besten Softwarelösungen nützen nichts, wenn sie rechtlich nicht verwendbar sind. Als junges, innovatives Unternehmen haben wir uns zum Ziel gesetzt, diese Lücke zu schließen.
+          </p>
+          <p class="story-description">
+            Gegründet von einem erfahrenen CTO mit über einem Jahrzehnt Entwicklungserfahrung und einem renommierten Rechtsanwalt, der zu den führenden Experten für Internetrecht in Deutschland gehört, vereinen wir technische Exzellenz mit juristischer Präzision.
+          </p>
+          <div class="story-highlight">
+            <div class="highlight-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M12 2L2 7l10 5 10-5-10-5z"></path>
+                <path d="m2 17 10 5 10-5"></path>
+                <path d="m2 12 10 5 10-5"></path>
+              </svg>
+            </div>
+            <div class="highlight-text">
+              <strong>Unsere Mission:</strong> Rechtssichere Softwarelösungen zu entwickeln, die Unternehmen dabei helfen, digital zu wachsen, ohne sich Sorgen über Compliance machen zu müssen.
+            </div>
+          </div>
+        </div>
+        <div class="story-image">
+          <div class="image-container">
+            <img src="https://images.unsplash.com/photo-1521737711867-e3b97375f902?w=600&h=400&fit=crop" alt="Team Meeting" class="story-img" />
+            <div class="image-overlay">
+              <div class="overlay-content">
+                <h4>Innovation trifft Erfahrung</h4>
+                <p>Moderne Entwicklungsmethoden gepaart mit bewährter Rechtsexpertise</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Values Section -->
+    <section class="values-section">
+      <div class="values-content">
+        <div class="values-header">
+          <h2 class="values-title">Unsere Werte</h2>
+          <p class="values-subtitle">Was uns antreibt und wie wir arbeiten</p>
+        </div>
+        
+        <div class="values-grid">
+          <div class="value-card">
+            <div class="card-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                <path d="M9 12l2 2 4-4"></path>
+              </svg>
+            </div>
+            <h3 class="card-title">Rechtssicherheit First</h3>
+            <p class="card-description">
+              Jede Zeile Code wird mit Blick auf aktuelle Rechtsprechung und DSGVO-Konformität entwickelt. Compliance ist nicht nachträglich hinzugefügt, sondern von Anfang an mitgedacht.
+            </p>
+          </div>
+
+          <div class="value-card">
+            <div class="card-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"></path>
+              </svg>
+            </div>
+            <h3 class="card-title">Modernste Technologie</h3>
+            <p class="card-description">
+              Wir setzen auf bewährte, zukunftssichere Technologien und moderne Entwicklungspraktiken. Unser Tech-Stack wird kontinuierlich evaluiert und an neue Standards angepasst.
+            </p>
+          </div>
+
+          <div class="value-card">
+            <div class="card-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                <circle cx="9" cy="7" r="4"></circle>
+                <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+              </svg>
+            </div>
+            <h3 class="card-title">Transparente Partnerschaft</h3>
+            <p class="card-description">
+              Unsere Kunden erhalten vollständigen Einblick in den Entwicklungsprozess. Regelmäßige Updates, klare Kommunikation und offene Zusammenarbeit stehen im Mittelpunkt.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Team Section -->
+    <section class="team-section">
+      <div class="team-content">
+        <div class="team-header">
+          <div class="team-subtitle">UNSER TEAM</div>
+          <h2 class="team-title">Die Köpfe hinter Devory</h2>
+          <p class="team-description">
+            Ein kleines, aber schlagkräftiges Team aus Technologie- und Rechtsexperten, das gemeinsam außergewöhnliche Lösungen entwickelt.
+          </p>
+        </div>
+
+        <div class="team-grid">
+          <div class="team-member">
+            <div class="member-image">
+              <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=300&h=300&fit=crop&crop=face" alt="CEO" />
+              <div class="member-overlay">
+                <div class="social-links">
+                  <a href="#" class="social-link">
+                    <svg viewBox="0 0 24 24" fill="currentColor">
+                      <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="member-info">
+              <h3 class="member-name">Dr. Nik Sarafi</h3>
+              <div class="member-title">
+                <span class="title-main">CEO</span>
+                <div class="title-secondary">Rechtsanwalt • Gründer • Internetrecht-Experte</div>
+              </div>
+              <p class="member-description">
+                Führender Experte für Internetrecht und Datenschutz mit über 15 Jahren Erfahrung. Partner einer der renommiertesten Kanzleien Deutschlands für Technologierecht.
+              </p>
+            </div>
+          </div>
+
+          <div class="team-member">
+            <div class="member-image">
+              <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=300&h=300&fit=crop&crop=face" alt="CTO" />
+              <div class="member-overlay">
+                <div class="social-links">
+                  <a href="#" class="social-link">
+                    <svg viewBox="0 0 24 24" fill="currentColor">
+                      <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="member-info">
+              <h3 class="member-name">Kristijan Gagov</h3>
+              <div class="member-title">
+                <span class="title-main">CTO</span>
+                <div class="title-secondary">Softwareentwickler • Gründer • Tech-Architekt</div>
+              </div>
+              <p class="member-description">
+                Erfahrener Vollstack-Entwickler mit über 12 Jahren Expertise in modernen Web-Technologien. Spezialist für skalierbare Architekturen und Performance-Optimierung.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="team-stats">
+          <div class="stat-item">
+            <div class="stat-number">25+</div>
+            <div class="stat-label">Jahre kombinierte Erfahrung</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-number">100%</div>
+            <div class="stat-label">DSGVO-Konformität</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-number">24/7</div>
+            <div class="stat-label">Support</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Philosophy Section -->
+    <section class="philosophy-section">
+      <div class="philosophy-content">
+        <div class="philosophy-left">
+          <div class="philosophy-subtitle">UNSERE PHILOSOPHIE</div>
+          <h2 class="philosophy-title">Warum wir anders sind</h2>
+          
+          <div class="philosophy-points">
+            <div class="point-item">
+              <div class="point-number">01</div>
+              <div class="point-content">
+                <h4>Rechtssicherheit von Tag 1</h4>
+                <p>Während andere Agenturen nachträglich versuchen, Compliance hinzuzufügen, bauen wir sie von Anfang an in jede Lösung ein.</p>
+              </div>
+            </div>
+
+            <div class="point-item">
+              <div class="point-number">02</div>
+              <div class="point-content">
+                <h4>Keine Kompromisse bei Qualität</h4>
+                <p>Schnelle Lösungen, die später Probleme bereiten? Nicht mit uns. Wir entwickeln durchdacht und zukunftssicher.</p>
+              </div>
+            </div>
+
+            <div class="point-item">
+              <div class="point-number">03</div>
+              <div class="point-content">
+                <h4>Transparenz als Standard</h4>
+                <p>Unsere Kunden wissen immer, woran wir arbeiten. Versteckte Kosten oder intransparente Prozesse gibt es bei uns nicht.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="philosophy-right">
+          <div class="philosophy-image-grid">
+            <div class="grid-image large">
+              <img src="https://images.unsplash.com/photo-1551434678-e076c223a692?w=400&h=300&fit=crop" alt="Code Quality" />
+              <div class="image-label">Clean Code</div>
+            </div>
+            <div class="grid-image small">
+              <img src="https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=200&h=150&fit=crop" alt="Legal Documents" />
+              <div class="image-label">Rechtssicherheit</div>
+            </div>
+            <div class="grid-image small">
+              <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=200&h=150&fit=crop" alt="Team Work" />
+              <div class="image-label">Teamwork</div>
+            </div>
+            <div class="grid-image large">
+              <img src="https://images.unsplash.com/photo-1559526324-4b87b5e36e44?w=400&h=300&fit=crop" alt="Innovation" />
+              <div class="image-label">Innovation</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Form Section -->
+    <section class="contact-section">
+      <div class="contact-content">
+        <!-- Left Side: Cool Info -->
+        <div class="contact-info">
+          <div class="info-header">
+            <div class="info-subtitle">KONTAKT AUFNEHMEN</div>
+            <h2 class="info-title">Bereit für Ihr nächstes Projekt?</h2>
+            <p class="info-description">Lassen Sie uns gemeinsam etwas Außergewöhnliches schaffen. Wir freuen uns darauf, Ihre Vision in die Realität umzusetzen.</p>
+          </div>
+
+          <div class="info-features">
+            <div class="feature-item">
+              <div class="feature-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                </svg>
+              </div>
+              <div class="feature-content">
+                <h4>24h Antwortzeit</h4>
+                <p>Wir melden uns innerhalb von 24 Stunden bei Ihnen zurück</p>
+              </div>
+            </div>
+
+            <div class="feature-item">
+              <div class="feature-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                  <path d="M9 12l2 2 4-4"></path>
+                </svg>
+              </div>
+              <div class="feature-content">
+                <h4>100% Vertraulich</h4>
+                <p>Alle Gespräche sind streng vertraulich und DSGVO-konform</p>
+              </div>
+            </div>
+
+            <div class="feature-item">
+              <div class="feature-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M14 9V5a3 3 0 0 0-6 0v4"></path>
+                  <rect x="2" y="9" width="20" height="11" rx="2" ry="2"></rect>
+                </svg>
+              </div>
+              <div class="feature-content">
+                <h4>NDA verfügbar</h4>
+                <p>Auf Wunsch senden wir Ihnen vorab eine Geheimhaltungsvereinbarung</p>
+              </div>
+            </div>
+
+            <div class="feature-item">
+              <div class="feature-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M9 11l3 3L22 4"></path>
+                  <path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"></path>
+                </svg>
+              </div>
+              <div class="feature-content">
+                <h4>Kostenlose Beratung</h4>
+                <p>Das erste Gespräch ist immer kostenfrei und unverbindlich</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Side: Contact Form -->
+        <div class="contact-form">
+          <form class="form-container" id="contactForm">
+            <div class="form-group">
+              <label for="name" class="form-label">Name *</label>
+              <input type="text" id="name" name="name" class="form-input" required>
+            </div>
+
+            <div class="form-group">
+              <label for="email" class="form-label">E-Mail Adresse *</label>
+              <input type="email" id="email" name="email" class="form-input" required>
+            </div>
+
+            <div class="form-group">
+              <label for="phone" class="form-label">Telefonnummer</label>
+              <input type="tel" id="phone" name="phone" class="form-input">
+            </div>
+
+            <div class="form-group">
+              <label for="project" class="form-label">Projektdetails *</label>
+              <textarea id="project" name="project" class="form-textarea" rows="5" placeholder="Beschreiben Sie kurz Ihr Projekt, Ihre Ziele und Ihre Vorstellungen..." required></textarea>
+            </div>
+
+            <div class="form-checkbox-group">
+              <label class="checkbox-container">
+                <input type="checkbox" id="nda" name="nda" class="checkbox-input">
+                <span class="checkbox-custom"></span>
+                <span class="checkbox-text">
+                  Bitte senden Sie mir vorab eine Geheimhaltungsvereinbarung (NDA) zu, bevor wir Projektdetails besprechen
+                </span>
+              </label>
+            </div>
+
+            <button type="submit" class="submit-btn">
+              <span class="btn-text">Projekt besprechen</span>
+              <div class="btn-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M7 17L17 7"></path>
+                  <path d="M7 7h10v10"></path>
+                </svg>
+              </div>
+            </button>
+
+            <p class="form-note">
+              Mit dem Absenden stimmen Sie unserer 
+              <a href="#" class="form-link">Datenschutzerklärung</a> zu.
+            </p>
+          </form>
+        </div>
+      </div>
+    </section>
+
+<!-- Footer Section -->
+<footer class="footer">
+  <div class="footer-content">
+    <!-- Top Footer -->
+    <div class="footer-top">
+      <!-- Logo & Description -->
+      <div class="footer-brand">
+        <div class="footer-logo" style="cursor: pointer;">
+          <a href="#">
+          <img src="fefefefe.png" alt="Devory Logo" />
+          </a>
+        </div>
+        <p class="footer-description">
+          Moderne Softwarelösungen mit integrierter Rechtssicherheit. 
+          Wir entwickeln die digitale Zukunft – DSGVO-konform und zukunftssicher.
+        </p>
+        <!-- <div class="footer-stats">
+          <div class="footer-stat">
+            <span class="stat-number">300+</span>
+            <span class="stat-text">Projekte</span>
+          </div>
+          <div class="footer-stat">
+            <span class="stat-number">Hohe</span>
+            <span class="stat-text">Zufriedenheit</span>
+          </div>
+          <div class="footer-stat">
+            <span class="stat-number">10+</span>
+            <span class="stat-text">Jahre Erfahrung</span>
+          </div>
+        </div> -->
+      </div>
+
+      <!-- Navigation Links -->
+      <div class="footer-nav">
+        <div class="footer-section">
+          <h4 class="footer-title">Unternehmen</h4>
+          <ul class="footer-links">
+            <li><a href="uberuns.html" class="footer-link">Über uns</a></li>
+            <li><a href="leistungen.html" class="footer-link">Leistungen</a></li>
+            <li><a href="projects.html" class="footer-link">Projekte</a></li>
+          </ul>
+        </div>
+
+
+        <div class="footer-section">
+          <h4 class="footer-title">Support</h4>
+          <ul class="footer-links">
+            <li><a href="contact.html" class="footer-link">Kontakt</a></li>
+            <li><a href="faq.html" class="footer-link">FAQ</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-section">
+          <h4 class="footer-title">Rechtliches</h4>
+          <ul class="footer-links">
+            <li><a href="impressum.html" class="footer-link">Impressum</a></li>
+            <li><a href="datenschutz.html" class="footer-link">Datenschutzerklärung</a></li>
+            <li><a href="agb.html" class="footer-link">AGB</a></li>
+            <li><a href="cookies.html" class="footer-link">Cookie-Richtlinie</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Contact Info -->
+      <div class="footer-contact">
+        <h4 class="footer-title">Kontakt</h4>
+        <div class="contact-info">
+          <div class="contact-item">
+            <div class="contact-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                <circle cx="12" cy="10" r="3"></circle>
+              </svg>
+            </div>
+            <div class="contact-text">
+              <span>Devory GmbH</span>
+              <span>Hohenloherstr. 36</span>
+              <span>73734 Esslingen</span>
+            </div>
+          </div>
+
+          <div class="contact-item">
+            <div class="contact-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                <polyline points="22,6 12,13 2,6"></polyline>
+              </svg>
+            </div>
+            <div class="contact-text">
+              <a href="mailto:hello@devory.de" class="contact-link">hello@devory.de</a>
+            </div>
+          </div>
+
+          <div class="contact-item">
+            <div class="contact-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+              </svg>
+            </div>
+            <div class="contact-text">
+              <a href="tel:+4930123456789" class="contact-link">+49 176 73234507</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bottom Footer -->
+    <div class="footer-bottom">
+      <div class="footer-bottom-content">
+        <div class="footer-copyright">
+          <p>&copy; 2025 Devory GmbH. Alle Rechte vorbehalten.</p>
+        </div>
+        
+        <div class="footer-legal-links">
+          <a href="impressum.html" class="legal-link">Impressum</a>
+          <span class="separator">•</span>
+          <a href="datenschutz.html" class="legal-link">Datenschutzerklärung</a>
+        </div>
+
+        <div class="footer-social">
+          <a href="#" class="social-link" aria-label="LinkedIn">
+            <svg viewBox="0 0 24 24" fill="currentColor">
+              <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+            </svg>
+          </a>
+          <a href="#" class="social-link" aria-label="GitHub">
+            <svg viewBox="0 0 24 24" fill="currentColor">
+              <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+            </svg>
+          </a>
+          <a href="#" class="social-link" aria-label="Twitter">
+            <svg viewBox="0 0 24 24" fill="currentColor">
+              <path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+  </div>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const form = document.getElementById('contactForm');
+      const submitBtn = form.querySelector('.submit-btn');
+      const btnText = submitBtn.querySelector('.btn-text');
+      const btnIcon = submitBtn.querySelector('.btn-icon');
+      
+      // Original button state
+      const originalText = btnText.textContent;
+      const originalIcon = btnIcon.innerHTML;
+      
+      form.addEventListener('submit', async function(e) {
+        e.preventDefault(); // THIS STOPS THE PAGE REFRESH!
+        
+        // Get form data
+        const formData = new FormData(form);
+        const data = {
+          name: formData.get('name'),
+          email: formData.get('email'),
+          phone: formData.get('phone'),
+          project: formData.get('project'),
+          nda: formData.get('nda') === 'on'
+        };
+        
+        // Set loading state
+        setButtonState('loading');
+        
+        try {
+          const response = await fetch('/api/contact', {
+            method: 'POST',
+            headers: {
+              'Content-Type': 'application/json',
+            },
+            body: JSON.stringify(data)
+          });
+          
+          const result = await response.json();
+          
+          if (response.ok) {
+            setButtonState('success');
+            showNotification('success', result.message);
+            form.reset();
+            setTimeout(() => setButtonState('default'), 3000);
+          } else {
+            setButtonState('error');
+            showNotification('error', result.error);
+            setTimeout(() => setButtonState('default'), 3000);
+          }
+        } catch (error) {
+          setButtonState('error');
+          showNotification('error', 'Netzwerkfehler. Bitte versuchen Sie es später erneut.');
+          setTimeout(() => setButtonState('default'), 3000);
+        }
+      });
+      
+      function setButtonState(state) {
+        submitBtn.disabled = state !== 'default';
+        
+        switch(state) {
+          case 'loading':
+            btnText.textContent = 'Wird gesendet...';
+            btnIcon.innerHTML = `<svg class="animate-spin" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2v4m0 12v4M4.93 4.93l2.83 2.83m8.49 8.49l2.83 2.83M2 12h4m12 0h4M4.93 19.07l2.83-2.83m8.49-8.49l2.83-2.83"/></svg>`;
+            submitBtn.style.background = 'linear-gradient(135deg, #94a3b8, #64748b)';
+            break;
+          case 'success':
+            btnText.textContent = 'Gesendet!';
+            btnIcon.innerHTML = `<svg class="animate-bounce" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>`;
+            submitBtn.style.background = 'linear-gradient(135deg, #10b981, #059669)';
+            break;
+          case 'error':
+            btnText.textContent = 'Fehler';
+            btnIcon.innerHTML = `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="15" y1="9" x2="9" y2="15"/><line x1="9" y1="9" x2="15" y2="15"/></svg>`;
+            submitBtn.style.background = 'linear-gradient(135deg, #ef4444, #dc2626)';
+            break;
+          default:
+            btnText.textContent = originalText;
+            btnIcon.innerHTML = originalIcon;
+            submitBtn.style.background = 'linear-gradient(135deg, #6f79a4, #64748b)';
+            break;
+        }
+      }
+      
+      function showNotification(type, message) {
+        const existingNotification = document.querySelector('.form-notification');
+        if (existingNotification) existingNotification.remove();
+        
+        const notification = document.createElement('div');
+        notification.className = `form-notification ${type}`;
+        notification.innerHTML = `
+          <div class="notification-content">
+            <div class="notification-icon">
+              ${type === 'success' ? 
+                '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>' :
+                '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="15" y1="9" x2="9" y2="15"/><line x1="9" y1="9" x2="15" y2="15"/></svg>'
+              }
+            </div>
+            <p>${message}</p>
+            <button class="notification-close" onclick="this.parentElement.parentElement.remove()">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+            </button>
+          </div>
+        `;
+        
+        form.appendChild(notification);
+        setTimeout(() => notification.classList.add('show'), 100);
+        setTimeout(() => {
+          if (notification.parentElement) {
+            notification.classList.remove('show');
+            setTimeout(() => notification.remove(), 300);
+          }
+        }, 5000);
+      }
+    });
+    </script>
+    
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,676 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Kontakt - Devory</title>
+  <script src="https://unpkg.com/lottie-web@latest/build/player/lottie.min.js"></script>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="devoryicon.png" type="image/x-icon">
+  <style>
+    /* Template-specific overrides */
+    .main {
+      height: 60vh !important;
+    }
+
+    .hero {
+      display: none;
+    }
+
+    .page-title-container {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+      z-index: 50;
+    }
+
+    .page-title {
+      font-size: clamp(2rem, 8vw, 4rem);
+      font-weight: 800;
+      color: #6f79a4;
+      text-shadow: 0 5px 20px rgba(0,0,0,0.1);
+      opacity: 0;
+      animation: fadeInUp 1s ease-out forwards;
+      animation-delay: 0.8s;
+    }
+
+    .nav-item.active {
+      color: #6f79a4;
+      font-weight: 600;
+    }
+
+    .nav-item.active::after {
+      width: 100%;
+    }
+  </style>
+</head>
+<body>
+  <div class="wrapper">
+    <div class="main" id="main">
+        <img src="ivorydevory.jpg" alt="Background Image" class="background-img" />
+
+        
+        <!-- Header -->
+        <header class="header" id="header">
+            <a href="index.html">
+
+          <img src="fefefefe.png" alt="Logo" class="logo" />
+          </a>
+          <nav class="nav">
+            <a href="index.html" class="nav-item">Home</a>
+            <a href="uberuns.html" class="nav-item">Über uns</a>
+            <a href="leistungen.html" class="nav-item">Leistungen</a>
+            <a href="projects.html" class="nav-item">Projekte</a>
+            <a href="contact.html" class="nav-item">Kontakt</a>
+          </nav>
+          
+          <a href="contact.html" class="contact-btn">Kontaktiere uns</a>
+        </header>
+
+              <!-- Page Title -->
+      <div class="page-title-container">
+        <h1 class="page-title">Kontakt aufnehmen</h1>
+      </div>
+        
+      </div>
+
+    <!-- Contact Hero Section -->
+    <section class="contact-hero-section">
+      <div class="contact-hero-content">
+        <div class="hero-text">
+          <div class="hero-subtitle">SPRECHEN WIR ÜBER IHR PROJEKT</div>
+          <h2 class="hero-title">Lassen Sie uns gemeinsam digitale Erfolgsgeschichten schreiben</h2>
+          <p class="hero-description">
+            Ob Startup-MVP oder Enterprise-Lösung – wir sind Ihr Partner für innovative, rechtssichere Softwareentwicklung. 
+            Von der ersten Idee bis zum erfolgreichen Launch begleiten wir Sie mit Expertise, Transparenz und Leidenschaft.
+          </p>
+        </div>
+        
+        <div class="contact-methods">
+          <div class="contact-method">
+            <div class="method-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+              </svg>
+            </div>
+            <div class="method-content">
+              <h4>Telefon</h4>
+              <p>+49 176 73234507</p>
+              <span class="method-time">Mo-Fr 9:00-18:00</span>
+            </div>
+          </div>
+
+          <div class="contact-method">
+            <div class="method-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                <polyline points="22,6 12,13 2,6"></polyline>
+              </svg>
+            </div>
+            <div class="method-content">
+              <h4>E-Mail</h4>
+              <p>hello@devory.de</p>
+              <span class="method-time">Antwort binnen 24h</span>
+            </div>
+          </div>
+
+          <div class="contact-method">
+            <div class="method-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                <circle cx="12" cy="10" r="3"></circle>
+              </svg>
+            </div>
+            <div class="method-content">
+              <h4>Büro</h4>
+              <p>Hohenloherstr. 36<br>73734 Esslingen</p>
+              <span class="method-time">Termine nach Vereinbarung</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Why Choose Us Section -->
+    <section class="why-choose-section">
+      <div class="why-choose-content">
+        <div class="section-header">
+          <h2 class="section-title">Warum mit uns arbeiten?</h2>
+          <p class="section-subtitle">Was uns von anderen Agenturen unterscheidet</p>
+        </div>
+        
+        <div class="benefits-grid">
+          <div class="benefit-card">
+            <div class="benefit-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                <path d="M9 12l2 2 4-4"></path>
+              </svg>
+            </div>
+            <h3 class="benefit-title">Rechtssicherheit garantiert</h3>
+            <p class="benefit-description">
+              Als einzige Agentur mit integrierter Rechtsberatung sind alle unsere Lösungen von Tag 1 an DSGVO-konform und rechtssicher.
+            </p>
+          </div>
+
+          <div class="benefit-card">
+            <div class="benefit-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"></path>
+              </svg>
+            </div>
+            <h3 class="benefit-title">Blitzschnelle Entwicklung</h3>
+            <p class="benefit-description">
+              Agile Sprints, moderne Tools und ein eingespieltes Team sorgen für überdurchschnittlich schnelle Projektumsetzung.
+            </p>
+          </div>
+
+          <div class="benefit-card">
+            <div class="benefit-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M3 3v18h18"></path>
+                <path d="M7 12v5"></path>
+                <path d="M12 8v9"></path>
+                <path d="M17 6v11"></path>
+              </svg>
+            </div>
+            <h3 class="benefit-title">Vollständige Transparenz</h3>
+            <p class="benefit-description">
+              Live-Dashboard für Projektfortschritt, regelmäßige Updates und direkter Zugang zu unserem Entwicklungsteam.
+            </p>
+          </div>
+
+          <div class="benefit-card">
+            <div class="benefit-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M12 2a2 2 0 0 1 2 2c0 .74-.4 1.39-1 1.73V7h4a2 2 0 0 1 2 2v1.28c.6.35 1 .98 1 1.72 0 .74-.4 1.39-1 1.73V15a2 2 0 0 1-2 2h-4v1.28c.6.35 1 .98 1 1.72a2 2 0 1 1-4 0c0-.74.4-1.39 1-1.73V17H7a2 2 0 0 1-2-2v-1.28c-.6-.35-1-.98-1-1.72 0-.74.4-1.39 1-1.73V9a2 2 0 0 1 2-2h4V5.73c-.6-.35-1-.98-1-1.73a2 2 0 0 1 2-2Z"></path>
+              </svg>
+            </div>
+            <h3 class="benefit-title">Modernste Technologien</h3>
+            <p class="benefit-description">
+              Wir setzen auf bewährte, zukunftssichere Tech-Stacks und sind immer am Puls der neuesten Entwicklungen.
+            </p>
+          </div>
+
+          <div class="benefit-card">
+            <div class="benefit-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"></path>
+              </svg>
+            </div>
+            <h3 class="benefit-title">Langzeit-Support</h3>
+            <p class="benefit-description">
+              Auch nach dem Launch sind wir für Sie da – mit kontinuierlichem Support, Updates und Weiterentwicklung.
+            </p>
+          </div>
+
+          <div class="benefit-card">
+            <div class="benefit-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M12 2L2 7l10 5 10-5-10-5z"></path>
+                <path d="m2 17 10 5 10-5"></path>
+                <path d="m2 12 10 5 10-5"></path>
+              </svg>
+            </div>
+            <h3 class="benefit-title">Skalierbare Architektur</h3>
+            <p class="benefit-description">
+              Unsere Lösungen wachsen mit Ihrem Unternehmen mit – von MVP bis Enterprise-Level ohne Neuentwicklung.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Form Section -->
+    <section class="contact-section">
+      <div class="contact-content">
+        <!-- Left Side: Cool Info -->
+        <div class="contact-info">
+          <div class="info-header">
+            <div class="info-subtitle">KOSTENLOSES ERSTGESPRÄCH</div>
+            <h2 class="info-title">Bereit für Ihr digitales Projekt?</h2>
+            <p class="info-description">
+              Erzählen Sie uns von Ihrer Vision und wir zeigen Ihnen, wie wir sie gemeinsam rechtssicher und zukunftsfähig umsetzen können.
+            </p>
+          </div>
+
+          <div class="info-features">
+            <div class="feature-item">
+              <div class="feature-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                </svg>
+              </div>
+              <div class="feature-content">
+                <h4>15-minütiges Kennenlernen</h4>
+                <p>Schneller Call um herauszufinden, ob wir zueinander passen</p>
+              </div>
+            </div>
+
+            <div class="feature-item">
+              <div class="feature-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                  <path d="M9 12l2 2 4-4"></path>
+                </svg>
+              </div>
+              <div class="feature-content">
+                <h4>Kostenlose Machbarkeitsstudie</h4>
+                <p>Detaillierte Analyse Ihrer Anforderungen und technischen Möglichkeiten</p>
+              </div>
+            </div>
+
+            <div class="feature-item">
+              <div class="feature-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M14 9V5a3 3 0 0 0-6 0v4"></path>
+                  <rect x="2" y="9" width="20" height="11" rx="2" ry="2"></rect>
+                </svg>
+              </div>
+              <div class="feature-content">
+                <h4>Transparent & Fair</h4>
+                <p>Festpreise ohne versteckte Kosten, faire Konditionen für alle Projektgrößen</p>
+              </div>
+            </div>
+
+            <div class="feature-item">
+              <div class="feature-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M9 11l3 3L22 4"></path>
+                  <path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"></path>
+                </svg>
+              </div>
+              <div class="feature-content">
+                <h4>Garantierte Qualität</h4>
+                <p>Professionelle Standards, Code-Reviews und umfassende Qualitätssicherung</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="contact-cta">
+            <div class="cta-text">
+              <strong>Oder rufen Sie uns direkt an:</strong>
+            </div>
+            <a href="tel:+4917673234507" class="phone-link">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+              </svg>
+              +49 176 73234507
+            </a>
+          </div>
+        </div>
+
+        <!-- Right Side: Contact Form -->
+        <div class="contact-form">
+          <form class="form-container" id="contactForm">
+            <div class="form-group">
+              <label for="name" class="form-label">Name *</label>
+              <input type="text" id="name" name="name" class="form-input" required>
+            </div>
+
+            <div class="form-group">
+              <label for="company" class="form-label">Unternehmen</label>
+              <input type="text" id="company" name="company" class="form-input">
+            </div>
+
+            <div class="form-group">
+              <label for="email" class="form-label">E-Mail Adresse *</label>
+              <input type="email" id="email" name="email" class="form-input" required>
+            </div>
+
+            <div class="form-group">
+              <label for="phone" class="form-label">Telefonnummer</label>
+              <input type="tel" id="phone" name="phone" class="form-input">
+            </div>
+
+            <div class="form-group">
+              <label for="project_type" class="form-label">Projekt-Art *</label>
+              <select id="project_type" name="project_type" class="form-input" required>
+                <option value="">Bitte wählen Sie...</option>
+                <option value="startup-mvp">Startup MVP</option>
+                <option value="mobile-app">Mobile App</option>
+                <option value="web-application">Web-Anwendung</option>
+                <option value="ecommerce">E-Commerce Shop</option>
+                <option value="enterprise">Enterprise Software</option>
+                <option value="ai-ml">KI/ML Lösung</option>
+                <option value="integration">System-Integration</option>
+                <option value="redesign">Redesign/Modernisierung</option>
+                <option value="consultation">Beratung & Konzeption</option>
+                <option value="other">Sonstiges</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="budget" class="form-label">Budget-Rahmen</label>
+              <select id="budget" name="budget" class="form-input">
+                <option value="">Optional</option>
+                <option value="under-10k">Unter 10.000€</option>
+                <option value="10k-25k">10.000€ - 25.000€</option>
+                <option value="25k-50k">25.000€ - 50.000€</option>
+                <option value="50k-100k">50.000€ - 100.000€</option>
+                <option value="over-100k">Über 100.000€</option>
+                <option value="flexible">Flexibel</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="timeline" class="form-label">Gewünschter Zeitrahmen</label>
+              <select id="timeline" name="timeline" class="form-input">
+                <option value="">Optional</option>
+                <option value="asap">So schnell wie möglich</option>
+                <option value="1-3-months">1-3 Monate</option>
+                <option value="3-6-months">3-6 Monate</option>
+                <option value="6-12-months">6-12 Monate</option>
+                <option value="flexible">Flexibel</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="message" class="form-label">Nachricht *</label>
+              <textarea id="message" name="message" class="form-textarea" rows="6" placeholder="Erzählen Sie uns von Ihrem Projekt, Ihren Zielen und Herausforderungen. Je detaillierter Sie beschreiben, desto besser können wir Ihnen helfen..." required></textarea>
+            </div>
+
+            <div class="form-checkbox-group">
+              <label class="checkbox-container">
+                <input type="checkbox" id="nda" name="nda" class="checkbox-input">
+                <span class="checkbox-custom"></span>
+                <span class="checkbox-text">
+                  Ich möchte vorab eine Geheimhaltungsvereinbarung (NDA) erhalten
+                </span>
+              </label>
+            </div>
+
+            <div class="form-checkbox-group">
+              <label class="checkbox-container">
+                <input type="checkbox" id="newsletter" name="newsletter" class="checkbox-input">
+                <span class="checkbox-custom"></span>
+                <span class="checkbox-text">
+                  Ich möchte gelegentlich Updates über neue Technologien und Trends erhalten
+                </span>
+              </label>
+            </div>
+
+            <button type="submit" class="submit-btn">
+              <span class="btn-text">Kostenloses Erstgespräch anfragen</span>
+              <div class="btn-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M7 17L17 7"></path>
+                  <path d="M7 7h10v10"></path>
+                </svg>
+              </div>
+            </button>
+
+            <p class="form-note">
+              Mit dem Absenden stimmen Sie unserer 
+              <a href="#" class="form-link">Datenschutzerklärung</a> zu.
+              Wir melden uns innerhalb von 24 Stunden bei Ihnen.
+            </p>
+          </form>
+        </div>
+      </div>
+    </section>
+
+<!-- Footer Section -->
+<footer class="footer">
+    <div class="footer-content">
+      <!-- Top Footer -->
+      <div class="footer-top">
+        <!-- Logo & Description -->
+        <div class="footer-brand">
+          <div class="footer-logo" style="cursor: pointer;">
+            <a href="#">
+            <img src="fefefefe.png" alt="Devory Logo" />
+            </a>
+          </div>
+          <p class="footer-description">
+            Moderne Softwarelösungen mit integrierter Rechtssicherheit. 
+            Wir entwickeln die digitale Zukunft – DSGVO-konform und zukunftssicher.
+          </p>
+          <!-- <div class="footer-stats">
+            <div class="footer-stat">
+              <span class="stat-number">300+</span>
+              <span class="stat-text">Projekte</span>
+            </div>
+            <div class="footer-stat">
+              <span class="stat-number">Hohe</span>
+              <span class="stat-text">Zufriedenheit</span>
+            </div>
+            <div class="footer-stat">
+              <span class="stat-number">10+</span>
+              <span class="stat-text">Jahre Erfahrung</span>
+            </div>
+          </div> -->
+        </div>
+  
+        <!-- Navigation Links -->
+        <div class="footer-nav">
+          <div class="footer-section">
+            <h4 class="footer-title">Unternehmen</h4>
+            <ul class="footer-links">
+              <li><a href="uberuns.html" class="footer-link">Über uns</a></li>
+              <li><a href="leistungen.html" class="footer-link">Leistungen</a></li>
+              <li><a href="projects.html" class="footer-link">Projekte</a></li>
+            </ul>
+          </div>
+  
+  
+          <div class="footer-section">
+            <h4 class="footer-title">Support</h4>
+            <ul class="footer-links">
+              <li><a href="contact.html" class="footer-link">Kontakt</a></li>
+              <li><a href="faq.html" class="footer-link">FAQ</a></li>
+            </ul>
+          </div>
+  
+          <div class="footer-section">
+            <h4 class="footer-title">Rechtliches</h4>
+            <ul class="footer-links">
+              <li><a href="impressum.html" class="footer-link">Impressum</a></li>
+              <li><a href="datenschutz.html" class="footer-link">Datenschutzerklärung</a></li>
+              <li><a href="agb.html" class="footer-link">AGB</a></li>
+              <li><a href="cookies.html" class="footer-link">Cookie-Richtlinie</a></li>
+            </ul>
+          </div>
+        </div>
+  
+        <!-- Contact Info -->
+        <div class="footer-contact">
+          <h4 class="footer-title">Kontakt</h4>
+          <div class="contact-info">
+            <div class="contact-item">
+              <div class="contact-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                  <circle cx="12" cy="10" r="3"></circle>
+                </svg>
+              </div>
+              <div class="contact-text">
+                <span>Devory GmbH</span>
+                <span>Hohenloherstr. 36</span>
+                <span>73734 Esslingen</span>
+              </div>
+            </div>
+  
+            <div class="contact-item">
+              <div class="contact-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                  <polyline points="22,6 12,13 2,6"></polyline>
+                </svg>
+              </div>
+              <div class="contact-text">
+                <a href="mailto:hello@devory.de" class="contact-link">hello@devory.de</a>
+              </div>
+            </div>
+  
+            <div class="contact-item">
+              <div class="contact-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                </svg>
+              </div>
+              <div class="contact-text">
+                <a href="tel:+4930123456789" class="contact-link">+49 176 73234507</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+  
+      <!-- Bottom Footer -->
+      <div class="footer-bottom">
+        <div class="footer-bottom-content">
+          <div class="footer-copyright">
+            <p>&copy; 2025 Devory GmbH. Alle Rechte vorbehalten.</p>
+          </div>
+          
+          <div class="footer-legal-links">
+            <a href="impressum.html" class="legal-link">Impressum</a>
+            <span class="separator">•</span>
+            <a href="datenschutz.html" class="legal-link">Datenschutzerklärung</a>
+          </div>
+  
+          <div class="footer-social">
+            <a href="#" class="social-link" aria-label="LinkedIn">
+              <svg viewBox="0 0 24 24" fill="currentColor">
+                <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+              </svg>
+            </a>
+            <a href="#" class="social-link" aria-label="GitHub">
+              <svg viewBox="0 0 24 24" fill="currentColor">
+                <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+              </svg>
+            </a>
+            <a href="#" class="social-link" aria-label="Twitter">
+              <svg viewBox="0 0 24 24" fill="currentColor">
+                <path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  
+    </div>
+    
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+          const form = document.getElementById('contactForm');
+          const submitBtn = form.querySelector('.submit-btn');
+          const btnText = submitBtn.querySelector('.btn-text');
+          const btnIcon = submitBtn.querySelector('.btn-icon');
+          
+          // Original button state
+          const originalText = btnText.textContent;
+          const originalIcon = btnIcon.innerHTML;
+          
+          form.addEventListener('submit', async function(e) {
+            e.preventDefault(); // THIS STOPS THE PAGE REFRESH!
+            
+            // Get form data
+            const formData = new FormData(form);
+            const data = {
+              name: formData.get('name'),
+              email: formData.get('email'),
+              phone: formData.get('phone'),
+              project: formData.get('project'),
+              nda: formData.get('nda') === 'on'
+            };
+            
+            // Set loading state
+            setButtonState('loading');
+            
+            try {
+              const response = await fetch('/api/contact', {
+                method: 'POST',
+                headers: {
+                  'Content-Type': 'application/json',
+                },
+                body: JSON.stringify(data)
+              });
+              
+              const result = await response.json();
+              
+              if (response.ok) {
+                setButtonState('success');
+                showNotification('success', result.message);
+                form.reset();
+                setTimeout(() => setButtonState('default'), 3000);
+              } else {
+                setButtonState('error');
+                showNotification('error', result.error);
+                setTimeout(() => setButtonState('default'), 3000);
+              }
+            } catch (error) {
+              setButtonState('error');
+              showNotification('error', 'Netzwerkfehler. Bitte versuchen Sie es später erneut.');
+              setTimeout(() => setButtonState('default'), 3000);
+            }
+          });
+          
+          function setButtonState(state) {
+            submitBtn.disabled = state !== 'default';
+            
+            switch(state) {
+              case 'loading':
+                btnText.textContent = 'Wird gesendet...';
+                btnIcon.innerHTML = `<svg class="animate-spin" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2v4m0 12v4M4.93 4.93l2.83 2.83m8.49 8.49l2.83 2.83M2 12h4m12 0h4M4.93 19.07l2.83-2.83m8.49-8.49l2.83-2.83"/></svg>`;
+                submitBtn.style.background = 'linear-gradient(135deg, #94a3b8, #64748b)';
+                break;
+              case 'success':
+                btnText.textContent = 'Gesendet!';
+                btnIcon.innerHTML = `<svg class="animate-bounce" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>`;
+                submitBtn.style.background = 'linear-gradient(135deg, #10b981, #059669)';
+                break;
+              case 'error':
+                btnText.textContent = 'Fehler';
+                btnIcon.innerHTML = `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="15" y1="9" x2="9" y2="15"/><line x1="9" y1="9" x2="15" y2="15"/></svg>`;
+                submitBtn.style.background = 'linear-gradient(135deg, #ef4444, #dc2626)';
+                break;
+              default:
+                btnText.textContent = originalText;
+                btnIcon.innerHTML = originalIcon;
+                submitBtn.style.background = 'linear-gradient(135deg, #6f79a4, #64748b)';
+                break;
+            }
+          }
+          
+          function showNotification(type, message) {
+            const existingNotification = document.querySelector('.form-notification');
+            if (existingNotification) existingNotification.remove();
+            
+            const notification = document.createElement('div');
+            notification.className = `form-notification ${type}`;
+            notification.innerHTML = `
+              <div class="notification-content">
+                <div class="notification-icon">
+                  ${type === 'success' ? 
+                    '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>' :
+                    '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="15" y1="9" x2="9" y2="15"/><line x1="9" y1="9" x2="15" y2="15"/></svg>'
+                  }
+                </div>
+                <p>${message}</p>
+                <button class="notification-close" onclick="this.parentElement.parentElement.remove()">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+                </button>
+              </div>
+            `;
+            
+            form.appendChild(notification);
+            setTimeout(() => notification.classList.add('show'), 100);
+            setTimeout(() => {
+              if (notification.parentElement) {
+                notification.classList.remove('show');
+                setTimeout(() => notification.remove(), 300);
+              }
+            }, 5000);
+          }
+        });
+        </script>
+        
+    <script src="script.js"></script>
+  </body>
+  </html>
