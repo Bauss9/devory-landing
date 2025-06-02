@@ -26,7 +26,7 @@ export default async function handler(req, res) {
       const nodemailer = require('nodemailer');
   
       // Create transporter (using Gmail SMTP - you can change this)
-      const transporter = nodemailer.createTransporter({
+      const transporter = nodemailer.createTransport({
         service: 'gmail',
         auth: {
           user: process.env.EMAIL_USER, // Your Gmail address
