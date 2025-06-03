@@ -1,7 +1,7 @@
 const main = document.getElementById('main');
 const header = document.getElementById('header');
 
-const birdJson = 'birdanimone.json';
+const birdJson = '../assets/birdanimone.json';
 
 // Track occupied lanes to prevent overlap
 const occupiedLanes = new Set();
@@ -385,21 +385,6 @@ class LanguageManager {
   }
 
   init() {
-    // Check if user manually selected a language before
-    const savedLang = localStorage.getItem('devory-language');
-    
-    if (savedLang) {
-      // Use saved preference
-      this.handleLanguageChange(savedLang);
-    } else {
-      // Auto-detect browser language
-      const browserLang = this.detectBrowserLanguage();
-      
-      // If not German, redirect to English
-      if (browserLang !== 'de') {
-        this.redirectToLanguage('en');
-      }
-    }
 
     // Setup language switchers
     this.setupLanguageSwitchers();
