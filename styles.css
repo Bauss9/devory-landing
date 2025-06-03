@@ -15,8 +15,8 @@ html, body {
 .mobile-menu {
   position: fixed;
   top: 0;
-  right: -70vw;
-  width: 70vw;
+  right: -80vw;
+  width: 80vw;
   height: 99svh;
   border-bottom-left-radius: 20px;
   background: linear-gradient(135deg, #6f79a4, #48577a);
@@ -30,7 +30,7 @@ html, body {
 }
 
 .wrapper.menu-open {
-  transform: translateX(-70vw);
+  transform: translateX(-80vw);
   transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1);
 }
 
