@@ -100,7 +100,7 @@ body.menu-open {
   justify-content: center;
   gap: 0;
   padding: 0;
-  margin-top: 4.75rem;
+  margin-top: 5rem;
 }
 
 .mobile-nav-item {
@@ -141,7 +141,7 @@ body.menu-open {
 }
 
 .mobile-menu-footer {
-  padding: 2rem;
+  padding: 2rem 0;
   text-align: center;
   margin-top: auto;
 }
@@ -5327,7 +5327,7 @@ body.menu-open {
 /* Mobile Language Selector */
 .mobile-language-selector {
   padding: 20px 30px;
-  margin-top: 20px;
+  margin-top: 0px;
 }
 
 .mobile-language-title {
@@ -5341,7 +5341,7 @@ body.menu-open {
 
 .mobile-language-options {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   gap: 10px;
 }
 
