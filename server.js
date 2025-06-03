@@ -87,7 +87,7 @@ app.post('/api/contact', async (req, res) => {
         ${nda ? '<p>Sie haben eine Geheimhaltungsvereinbarung (NDA) angefordert. Diese senden wir Ihnen mit unserer ersten Antwort zu.</p>' : ''}
         
         <p>Falls Sie dringende Fragen haben, erreichen Sie uns direkt unter:</p>
-        <p>📞 +49 (0) 69 17009801<br>
+        <p>📞 +49 6195 6737310<br>
         📧 hello@devory.de</p>
         
         <p>Mit freundlichen Grüßen<br>
