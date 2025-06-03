@@ -3039,7 +3039,6 @@ body.menu-open {
   .footer-top {
     grid-template-columns: 1fr;
     gap: 50px;
-    text-align: center;
   }
   
   .footer-nav {
@@ -3076,7 +3075,6 @@ body.menu-open {
   }
   
   .contact-info {
-    align-items: center;
   }
   
   .footer-bottom-content {
