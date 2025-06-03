@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Impressum - Devory</title>
   <script src="https://unpkg.com/lottie-web@latest/build/player/lottie.min.js"></script>
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="/styles.css">
   <link rel="icon" href="devoryicon.png" type="image/x-icon">
   <style>
     /* Template-specific overrides */
@@ -286,6 +286,20 @@
               <span class="nav-text">Kontakt</span>
             </a>
           </nav>
+
+          <div class="mobile-language-selector">
+            <div class="mobile-language-title">Sprache / Language</div>
+            <div class="mobile-language-options">
+              <div class="mobile-lang-item active" data-lang="de">
+                <span class="flag-icon">🇩🇪</span>
+                <span>Deutsch</span>
+              </div>
+              <div class="mobile-lang-item" data-lang="en">
+                <span class="flag-icon">🇺🇸</span>
+                <span>English</span>
+              </div>
+            </div>
+          </div>
       
           <!-- Footer -->
           <div class="mobile-menu-footer">
@@ -299,13 +313,24 @@
               <a href="#" class="social-dot"></a>
             </div>
             <div class="mobile-copyright">
-              <p>&copy; 2025 Devory GmbH</p>
+              <p>&copy; 2025 devory GmbH</p>
             </div>
           </div>
         </div>
       </div>
   <div class="wrapper">
     <div class="main" id="main">
+            
+      <div class="language-selector">
+        <div class="lang-item active" data-lang="de">
+          <span class="flag-icon">🇩🇪</span>
+          <span>DE</span>
+        </div>
+        <div class="lang-item" data-lang="en">
+          <span class="flag-icon">🇺🇸</span>
+          <span>EN</span>
+        </div>
+      </div>
         <img src="/assets/ivorydevory.jpg" alt="Background Image" class="background-img" />
 
         
@@ -351,8 +376,9 @@
             </div>
             <h3 class="card-title">Firmenanschrift</h3>
             <div class="card-content">
-              <p><strong>Devory GmbH</strong></p>
-              <p>Hohenloherstr. 36<br>73734 Esslingen am Neckar<br>Deutschland</p>
+              <p><strong>devory GmbH</strong></p>
+              <p>Frankfurter Straße 84
+                <br>65779 Kelkheim (Taunus)                <br>Deutschland</p>
             </div>
           </div>
 
@@ -366,8 +392,9 @@
             <h3 class="card-title">Kontakt</h3>
             <div class="card-content">
               <p><strong>Telefon:</strong> +49 176 73234507</p>
-              <p><strong>E-Mail:</strong> <a href="mailto:hello@devory.de">hello@devory.de</a></p>
-              <p><strong>Website:</strong> <a href="https://www.devory.de" target="_blank">www.devory.de</a></p>
+              <p><strong>Telefax:</strong> 069 / 70793-660</p>
+              <p><strong>E-Mail:</strong> <a href="mailto:hello@devory.de">hello@devory.it</a></p>
+              <p><strong>Website:</strong> <a href="https://www.devory.it" target="_blank">www.devory.it</a></p>
             </div>
           </div>
 
@@ -381,8 +408,7 @@
             </div>
             <h3 class="card-title">Vertretungsberechtigte Geschäftsführer</h3>
             <div class="card-content">
-              <p><strong>[IHR NAME]</strong></p>
-              <p><strong>[ZWEITER GESCHÄFTSFÜHRER - FALLS VORHANDEN]</strong></p>
+              <p><strong>Dr. Nik Sarafi</strong></p>
             </div>
           </div>
 
@@ -399,45 +425,12 @@
             </div>
             <h3 class="card-title">Registereintrag</h3>
             <div class="card-content">
-              <p><strong>Handelsregister:</strong> Amtsgericht Stuttgart</p>
-              <p><strong>Registernummer:</strong> HRB [IHRE HRB NUMMER]</p>
-              <p><strong>Umsatzsteuer-ID:</strong> DE[IHRE UMSATZSTEUER-ID]</p>
+              <p><strong>Handelsregister:</strong> Amtsgericht Königstein (Taunus)</p>
+              <p><strong>Registernummer:</strong> HRB 11764</p>
+              <p><strong>Umsatzsteuer-ID:</strong> DE368032735              </p>
             </div>
           </div>
 
-          <!-- Professional Liability -->
-          <div class="impressum-card">
-            <div class="card-icon">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
-                <path d="M9 12l2 2 4-4"></path>
-              </svg>
-            </div>
-            <h3 class="card-title">Berufshaftpflichtversicherung</h3>
-            <div class="card-content">
-              <p><strong>Versicherer:</strong> [VERSICHERUNGSNAME]</p>
-              <p><strong>Versicherungsnummer:</strong> [VERSICHERUNGSNUMMER]</p>
-              <p><strong>Geltungsbereich:</strong> Deutschland/EU</p>
-            </div>
-          </div>
-
-          <!-- Supervisory Authority -->
-          <div class="impressum-card">
-            <div class="card-icon">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                <path d="M3 3v18h18"></path>
-                <path d="M7 12v5"></path>
-                <path d="M12 8v9"></path>
-                <path d="M17 6v11"></path>
-              </svg>
-            </div>
-            <h3 class="card-title">Aufsichtsbehörde</h3>
-            <div class="card-content">
-              <p><strong>Zuständige Kammer:</strong> IHK Region Stuttgart</p>
-              <p><strong>Adresse:</strong> Jägerstraße 30, 70174 Stuttgart</p>
-              <p><strong>Website:</strong> <a href="https://www.stuttgart.ihk24.de" target="_blank">www.stuttgart.ihk24.de</a></p>
-            </div>
-          </div>
         </div>
 
         <!-- Disclaimer Section -->
@@ -518,9 +511,9 @@
                   </svg>
                 </div>
                 <div class="contact-text">
-                  <span>Devory GmbH</span>
-                  <span>Hohenloherstr. 36</span>
-                  <span>73734 Esslingen</span>
+                  <span>devory GmbH</span>
+                  <span>Frankfurter Straße 84                  </span>
+                  <span>65779 Kelkheim (Taunus)                  </span>
                 </div>
               </div>
 
@@ -554,7 +547,7 @@
         <div class="footer-bottom">
           <div class="footer-bottom-content">
             <div class="footer-copyright">
-              <p>&copy; 2025 Devory GmbH. Alle Rechte vorbehalten.</p>
+              <p>&copy; 2025 devory GmbH. Alle Rechte vorbehalten.</p>
             </div>
             
             <div class="footer-legal-links">
@@ -576,17 +569,18 @@
               </a>
               <a href="/" class="social-link" aria-label="Twitter">
                 <svg viewBox="0 0 24 24" fill="currentColor">
-                  <path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/>
-                </svg>
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </footer>
-    
-  </div>
-
-  <script src="script.js"></script>
-</body>
-</html>
+                  <path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002
+                  .163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/>
+                                  </svg>
+                                </a>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </footer>
+                      
+                    </div>
+                  
+                    <script src="script.js"></script>
+                  </body>
+                  </html>
