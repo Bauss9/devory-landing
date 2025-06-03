@@ -10,7 +10,7 @@
   <style>
     /* Template-specific overrides */
     .main {
-      height: 60vh !important;
+      height: 60svh !important;
     }
 
     .hero {
@@ -47,23 +47,81 @@
   </style>
 </head>
 <body>
+    <div class="mobile-menu" id="mobileMenu">
+        <div class="mobile-menu-content">
+          <!-- Header with logo and X -->
+          <div class="mobile-menu-header">
+            <img src="/assets/devorsjy.png" alt="Devory" class="mobile-logo" />
+            <button class="mobile-close-btn" id="mobileCloseBtn">
+              <span class="close-line"></span>
+              <span class="close-line"></span>
+            </button>
+          </div>
+      
+          <!-- Main navigation -->
+          <nav class="mobile-nav">
+            <a href="/" class="mobile-nav-item">
+              <span class="nav-number">01</span>
+              <span class="nav-text">Home</span>
+            </a>
+            <a href="/about" class="mobile-nav-item">
+              <span class="nav-number">02</span>
+              <span class="nav-text">Über uns</span>
+            </a>
+            <a href="/services" class="mobile-nav-item">
+              <span class="nav-number">03</span>
+              <span class="nav-text">Leistungen</span>
+            </a>
+            <a href="/projects" class="mobile-nav-item">
+              <span class="nav-number">04</span>
+              <span class="nav-text">Projekte</span>
+            </a>
+            <a href="/contact" class="mobile-nav-item">
+              <span class="nav-number">05</span>
+              <span class="nav-text">Kontakt</span>
+            </a>
+          </nav>
+      
+          <!-- Footer -->
+          <div class="mobile-menu-footer">
+            <div class="mobile-contact">
+              <p>hello@devory.de</p>
+              <a href="tel:+4917673234507" style="color: white; font-size: 13px;">+49 176 73234507</a>
+            </div>
+            <div class="mobile-social">
+              <a href="#" class="social-dot"></a>
+              <a href="#" class="social-dot"></a>
+              <a href="#" class="social-dot"></a>
+            </div>
+            <div class="mobile-copyright">
+              <p>&copy; 2025 Devory GmbH</p>
+            </div>
+          </div>
+        </div>
+      </div>
   <div class="wrapper">
     <div class="main" id="main">
-        <img src="ivorydevory.jpg" alt="Background Image" class="background-img" />
+        <img src="/assets/ivorydevory.jpg" alt="Background Image" class="background-img" />
 
         
         <!-- Header -->
         <header class="header" id="header">
             <a href="/">
 
-          <img src="devorsjy.png" alt="Logo" class="logo" />
+          <img src="/assets/devorsjy.png" alt="Logo" class="logo" />
           </a>
           <nav class="nav">
             <a href="/" class="nav-item">Home</a>
-            <a href="/uberuns" class="nav-item">Über uns</a>
-            <a href="/leistungen" class="nav-item">Leistungen</a>
+            <a href="/about" class="nav-item">Über uns</a>
+            <a href="/services" class="nav-item">Leistungen</a>
             <a href="/projects" class="nav-item">Projekte</a>
           </nav>
+
+          <div class="burger-menu" id="burgerMenu">
+            <span class="burger-line"></span>
+            <span class="burger-line"></span>
+            <span class="burger-line"></span>
+          </div>
           
           <a href="/contact" class="contact-btn">Jetzt Kontakt aufnehmen</a>
         </header>
@@ -107,7 +165,7 @@
     <section class="case-study-section">
       <div class="case-study-content">
         <div class="case-image">
-          <img src="shobba.jpg" alt="E-Commerce Platform Dashboard" />
+          <img src="/assets/shobba.jpg" alt="E-Commerce Platform Dashboard" />
           <div class="case-overlay">
             <div class="case-category">E-Commerce</div>
           </div>
@@ -121,23 +179,23 @@
           
           <div class="tech-stack">
             <div class="tech-item">
-              <img src="assets/angular.png" alt="Angular" class="tech-icon" />
+              <img src="/assets/angular.png" alt="Angular" class="tech-icon" />
               <span class="tech-name">Angular</span>
             </div>
             <div class="tech-item">
-                <img src="assets/swift.png" alt="Angular" class="tech-icon" />
+                <img src="/assets/swift.png" alt="Angular" class="tech-icon" />
                 <span class="tech-name">Swift</span>
               </div>
             <div class="tech-item">
-              <img src="assets/nodejs.png" alt="Node.js" class="tech-icon" />
+              <img src="/assets/nodejs.png" alt="Node.js" class="tech-icon" />
               <span class="tech-name">Node.js</span>
             </div>
             <div class="tech-item">
-              <img src="assets/gcp.png" alt="Google Cloud Platform" class="tech-icon" />
+              <img src="/assets/gcp.png" alt="Google Cloud Platform" class="tech-icon" />
               <span class="tech-name">Google Cloud</span>
             </div>
             <div class="tech-item">
-              <img src="assets/postgres.png" alt="Docker" class="tech-icon" />
+              <img src="/assets/postgres.png" alt="Docker" class="tech-icon" />
               <span class="tech-name">Postgres</span>
             </div>
           </div>
@@ -253,7 +311,7 @@
     <section class="case-study-section reverse">
       <div class="case-study-content">
         <div class="case-image">
-          <img src="branqovic.jpg" alt="Markenüberwachung" />
+          <img src="/assets/branqovic.jpg" alt="Markenüberwachung" />
           <div class="case-overlay">
             <div class="case-category">Markenüberwachung</div>
           </div>
@@ -267,19 +325,19 @@
           
           <div class="tech-stack">
             <div class="tech-item">
-              <img src="assets/react.png" alt="React Native" class="tech-icon" />
+              <img src="/assets/react.png" alt="React Native" class="tech-icon" />
               <span class="tech-name">React</span>
             </div>
             <div class="tech-item">
-              <img src="assets/python.png" alt="Python" class="tech-icon" />
+              <img src="/assets/python.png" alt="Python" class="tech-icon" />
               <span class="tech-name">Python</span>
             </div>
             <div class="tech-item">
-              <img src="assets/nodejs.png" alt="Docker" class="tech-icon" />
+              <img src="/assets/nodejs.png" alt="Docker" class="tech-icon" />
               <span class="tech-name">Node.js</span>
             </div>
             <div class="tech-item">
-              <img src="assets/postgres.png" alt="AWS" class="tech-icon" />
+              <img src="/assets/postgres.png" alt="AWS" class="tech-icon" />
               <span class="tech-name">Postgres</span>
             </div>
           </div>
@@ -375,7 +433,7 @@
     <section class="case-study-section">
       <div class="case-study-content">
         <div class="case-image">
-          <img src="blejks.jpg" alt="FinTech Trading Platform" />
+          <img src="/assets/blejks.jpg" alt="FinTech Trading Platform" />
           <div class="case-overlay">
             <div class="case-category">App</div>
           </div>
@@ -389,19 +447,19 @@
           
           <div class="tech-stack">
             <div class="tech-item">
-              <img src="assets/react.png" alt="React Native" class="tech-icon" />
+              <img src="/assets/react.png" alt="React Native" class="tech-icon" />
               <span class="tech-name">React Native</span>
             </div>
             <div class="tech-item">
-              <img src="assets/nodejs.png" alt="Python" class="tech-icon" />
+              <img src="/assets/nodejs.png" alt="Python" class="tech-icon" />
               <span class="tech-name">Node.js</span>
             </div>
             <div class="tech-item">
-              <img src="assets/postgres.png" alt="Apache Kafka" class="tech-icon" />
+              <img src="/assets/postgres.png" alt="Apache Kafka" class="tech-icon" />
               <span class="tech-name">Postgres</span>
             </div>
             <div class="tech-item">
-              <img src="assets/docker.png" alt="Docker" class="tech-icon" />
+              <img src="/assets/docker.png" alt="Docker" class="tech-icon" />
               <span class="tech-name">Docker</span>
             </div>
           </div>
@@ -494,7 +552,7 @@
     <section class="case-study-section reverse">
       <div class="case-study-content">
         <div class="case-image">
-          <img src="blejksa.jpg" alt="IoT Smart City Dashboard" />
+          <img src="/assets/blejksa.jpg" alt="IoT Smart City Dashboard" />
           <div class="case-overlay">
             <div class="case-category">Smart Dash</div>
           </div>
@@ -508,28 +566,28 @@
           
           <div class="tech-stack">
             <div class="tech-item">
-              <img src="assets/react.png" alt="React" class="tech-icon" />
+              <img src="/assets/react.png" alt="React" class="tech-icon" />
               <span class="tech-name">React</span>
             </div>
             <div class="tech-item">
-              <img src="assets/go.png" alt="Go" class="tech-icon" />
+              <img src="/assets/go.png" alt="Go" class="tech-icon" />
               <span class="tech-name">Go</span>
             </div>
             <div class="tech-item">
-              <img src="assets/nodejs.png" alt="Node.js" class="tech-icon" />
+              <img src="/assets/nodejs.png" alt="Node.js" class="tech-icon" />
               <span class="tech-name">Node.js</span>
             </div>
             <div class="tech-item">
-                <img src="assets/docker.png" alt="Docker" class="tech-icon" />
+                <img src="/assets/docker.png" alt="Docker" class="tech-icon" />
                 <span class="tech-name">Docker</span>
               </div>
 
             <div class="tech-item">
-                <img src="assets/postgres.png" alt="Postgres" class="tech-icon" />
+                <img src="/assets/postgres.png" alt="Postgres" class="tech-icon" />
                 <span class="tech-name">Postgres</span>
               </div>
               <div class="tech-item">
-                <img src="assets/aws.png" alt="AWS" class="tech-icon" />
+                <img src="/assets/aws.png" alt="AWS" class="tech-icon" />
                 <span class="tech-name">AWS</span>
               </div>
           </div>
@@ -623,7 +681,7 @@
     <section class="case-study-section">
       <div class="case-study-content">
         <div class="case-image">
-          <video src="particles_2.mp4" autoplay playsinline loop muted alt="AI Content Generation Platform" >
+          <video src="/assets/particles_2.mp4" autoplay playsinline loop muted alt="AI Content Generation Platform" >
           <div class="case-overlay">
             <div class="case-category">AI / Machine Learning</div>
           </div>
@@ -637,19 +695,19 @@
           
           <div class="tech-stack">
             <div class="tech-item">
-              <img src="assets/nextjs.png" alt="Next.js" class="tech-icon" />
+              <img src="/assets/nextjs.png" alt="Next.js" class="tech-icon" />
               <span class="tech-name">Next.js</span>
             </div>
             <div class="tech-item">
-              <img src="assets/python.png" alt="Python" class="tech-icon" />
+              <img src="/assets/python.png" alt="Python" class="tech-icon" />
               <span class="tech-name">Python</span>
             </div>
             <div class="tech-item">
-              <img src="assets/tensorflow.png" alt="TensorFlow" class="tech-icon" />
+              <img src="/assets/tensorflow.png" alt="TensorFlow" class="tech-icon" />
               <span class="tech-name">TensorFlow</span>
             </div>
             <div class="tech-item">
-              <img src="assets/openai.png" alt="OpenAI" class="tech-icon" />
+              <img src="/assets/openai.png" alt="OpenAI" class="tech-icon" />
               <span class="tech-name">OpenAI API</span>
             </div>
           </div>
@@ -879,7 +937,7 @@
         <div class="footer-brand">
           <div class="footer-logo" style="cursor: pointer;">
             <a href="/">
-            <img src="devorsjy.png" alt="Devory Logo" />
+            <img src="/assets/devorsjy.png" alt="Devory Logo" />
             </a>
           </div>
           <p class="footer-description">
@@ -907,8 +965,8 @@
           <div class="footer-section">
             <h4 class="footer-title">Unternehmen</h4>
             <ul class="footer-links">
-              <li><a href="/uberuns" class="footer-link">Über uns</a></li>
-              <li><a href="/leistungen" class="footer-link">Leistungen</a></li>
+              <li><a href="/about" class="footer-link">Über uns</a></li>
+              <li><a href="/services" class="footer-link">Leistungen</a></li>
               <li><a href="/projects" class="footer-link">Projekte</a></li>
             </ul>
           </div>
@@ -925,7 +983,7 @@
           <div class="footer-section">
             <h4 class="footer-title">Rechtliches</h4>
             <ul class="footer-links">
-              <li><a href="/impressum" class="footer-link">Impressum</a></li>
+              <li><a href="/imprint" class="footer-link">Impressum</a></li>
               <li><a href="datenschutz.html" class="footer-link">Datenschutzerklärung</a></li>
               <li><a href="agb.html" class="footer-link">AGB</a></li>
               <li><a href="cookies.html" class="footer-link">Cookie-Richtlinie</a></li>
@@ -985,7 +1043,7 @@
           </div>
           
           <div class="footer-legal-links">
-            <a href="/impressum" class="legal-link">Impressum</a>
+            <a href="/imprint" class="legal-link">Impressum</a>
             <span class="separator">•</span>
             <a href="datenschutz.html" class="legal-link">Datenschutzerklärung</a>
           </div>

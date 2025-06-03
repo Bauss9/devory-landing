@@ -467,32 +467,7 @@ class LanguageManager {
       item.classList.toggle('active', item.dataset.lang === lang);
     });
   }
-
-  redirectToLanguage(lang) {
-    const currentPath = window.location.pathname;
-    let newPath;
-
-    console.log('redirecting to language');
-    if (lang === 'en') {
-      // Redirect to /en
-      if (currentPath === '/' || currentPath === '/index.html') {
-        newPath = '/en/';
-      } else {
-        newPath = '/en' + currentPath;
-      }
-    } else {
-      // Redirect to German (root)
-      if (currentPath.startsWith('/en')) {
-        newPath = currentPath.replace('/en', '') || '/';
-      } else {
-        newPath = '/';
-      }
-    }
-
-    window.location.href = newPath;
-  }
 }
-
 
 
 
@@ -500,7 +475,6 @@ class LanguageManager {
 document.addEventListener('DOMContentLoaded', () => {
   new OptimizedScrollManager();
   new LanguageManager();
-
   const burgerMenu = document.getElementById('burgerMenu');
   const mobileMenu = document.getElementById('mobileMenu');
   const wrapper = document.querySelector('.wrapper');

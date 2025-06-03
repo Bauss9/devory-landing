@@ -378,6 +378,7 @@ class OptimizedScrollManager {
   }
 }
 
+
 class LanguageManager {
   constructor() {
     this.init();
@@ -468,39 +469,13 @@ class LanguageManager {
     });
   }
 
-  redirectToLanguage(lang) {
-    const currentPath = window.location.pathname;
-    let newPath;
-
-    console.log('redirecting to language');
-    if (lang === 'en') {
-      // Redirect to /en
-      if (currentPath === '/' || currentPath === '/index.html') {
-        newPath = '/en/';
-      } else {
-        newPath = '/en' + currentPath;
-      }
-    } else {
-      // Redirect to German (root)
-      if (currentPath.startsWith('/en')) {
-        newPath = currentPath.replace('/en', '') || '/';
-      } else {
-        newPath = '/';
-      }
-    }
-
-    window.location.href = newPath;
-  }
 }
-
-
 
 
 // Initialize when DOM is loaded
 document.addEventListener('DOMContentLoaded', () => {
   new OptimizedScrollManager();
-  new LanguageManager();
-
+new LanguageManager();
   const burgerMenu = document.getElementById('burgerMenu');
   const mobileMenu = document.getElementById('mobileMenu');
   const wrapper = document.querySelector('.wrapper');

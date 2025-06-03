@@ -10,7 +10,7 @@
   <style>
     /* Template-specific overrides */
     .main {
-      height: 60vh !important;
+      height: 60svh !important;
     }
 
     .hero {
@@ -47,24 +47,83 @@
   </style>
 </head>
 <body>
+  <div class="mobile-menu" id="mobileMenu">
+    <div class="mobile-menu-content">
+      <!-- Header with logo and X -->
+      <div class="mobile-menu-header">
+        <img src="/assets/devorsjy.png" alt="Devory" class="mobile-logo" />
+        <button class="mobile-close-btn" id="mobileCloseBtn">
+          <span class="close-line"></span>
+          <span class="close-line"></span>
+        </button>
+      </div>
+  
+      <!-- Main navigation -->
+      <nav class="mobile-nav">
+        <a href="/" class="mobile-nav-item">
+          <span class="nav-number">01</span>
+          <span class="nav-text">Home</span>
+        </a>
+        <a href="/about" class="mobile-nav-item">
+          <span class="nav-number">02</span>
+          <span class="nav-text">Über uns</span>
+        </a>
+        <a href="/services" class="mobile-nav-item">
+          <span class="nav-number">03</span>
+          <span class="nav-text">Leistungen</span>
+        </a>
+        <a href="/projects" class="mobile-nav-item">
+          <span class="nav-number">04</span>
+          <span class="nav-text">Projekte</span>
+        </a>
+        <a href="/contact" class="mobile-nav-item">
+          <span class="nav-number">05</span>
+          <span class="nav-text">Kontakt</span>
+        </a>
+      </nav>
+  
+      <!-- Footer -->
+      <div class="mobile-menu-footer">
+        <div class="mobile-contact">
+          <p>hello@devory.de</p>
+          <a href="tel:+4917673234507" style="color: white; font-size: 13px;">+49 176 73234507</a>
+        </div>
+        <div class="mobile-social">
+          <a href="#" class="social-dot"></a>
+          <a href="#" class="social-dot"></a>
+          <a href="#" class="social-dot"></a>
+        </div>
+        <div class="mobile-copyright">
+          <p>&copy; 2025 Devory GmbH</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
   <div class="wrapper">
     <div class="main" id="main">
-      <img src="ivorydevory.jpg" alt="Background Image" class="background-img" />
+      <img src="/assets/ivorydevory.jpg" alt="Background Image" class="background-img" />
 
       
       <!-- Header -->
       <header class="header" id="header">
           <a href="/">
 
-        <img src="devorsjy.png" alt="Logo" class="logo" />
+        <img src="/assets/devorsjy.png" alt="Logo" class="logo" />
         </a>
         <nav class="nav">
           <a href="/" class="nav-item">Home</a>
-          <a href="/uberuns" class="nav-item">Über uns</a>
-          <a href="/leistungen" class="nav-item">Leistungen</a>
+          <a href="/about" class="nav-item">Über uns</a>
+          <a href="/services" class="nav-item">Leistungen</a>
           <a href="/projects" class="nav-item">Projekte</a>
         </nav>
         
+
+        <div class="burger-menu" id="burgerMenu">
+          <span class="burger-line"></span>
+          <span class="burger-line"></span>
+          <span class="burger-line"></span>
+        </div>
         <a href="/contact" class="contact-btn">Jetzt Kontakt aufnehmen</a>
       </header>
 
@@ -180,7 +239,7 @@
         <div class="team-grid">
           <div class="team-member">
             <div class="member-image">
-              <img src="dwadawd" alt="CEO" />
+              <img src="/assets/dwadawd" alt="CEO" />
               <div class="member-overlay">
                 <div class="social-links">
                   <a href="/" class="social-link">
@@ -205,7 +264,7 @@
 
           <div class="team-member">
             <div class="member-image">
-              <img src="dwada" alt="CTO" />
+              <img src="/assets/dwada" alt="CTO" />
               <div class="member-overlay">
                 <div class="social-links">
                   <a href="/" class="social-link">
@@ -429,7 +488,7 @@
       <div class="footer-brand">
         <div class="footer-logo" style="cursor: pointer;">
           <a href="/">
-          <img src="devorsjy.png" alt="Devory Logo" />
+          <img src="/assets/devorsjy.png" alt="Devory Logo" />
           </a>
         </div>
         <p class="footer-description">
@@ -457,8 +516,8 @@
         <div class="footer-section">
           <h4 class="footer-title">Unternehmen</h4>
           <ul class="footer-links">
-            <li><a href="/uberuns" class="footer-link">Über uns</a></li>
-            <li><a href="/leistungen" class="footer-link">Leistungen</a></li>
+            <li><a href="/about" class="footer-link">Über uns</a></li>
+            <li><a href="/services" class="footer-link">Leistungen</a></li>
             <li><a href="/projects" class="footer-link">Projekte</a></li>
           </ul>
         </div>
@@ -475,7 +534,7 @@
         <div class="footer-section">
           <h4 class="footer-title">Rechtliches</h4>
           <ul class="footer-links">
-            <li><a href="/impressum" class="footer-link">Impressum</a></li>
+            <li><a href="/imprint" class="footer-link">Impressum</a></li>
             <li><a href="datenschutz.html" class="footer-link">Datenschutzerklärung</a></li>
             <li><a href="agb.html" class="footer-link">AGB</a></li>
             <li><a href="cookies.html" class="footer-link">Cookie-Richtlinie</a></li>
@@ -535,7 +594,7 @@
         </div>
         
         <div class="footer-legal-links">
-          <a href="/impressum" class="legal-link">Impressum</a>
+          <a href="/imprint" class="legal-link">Impressum</a>
           <span class="separator">•</span>
           <a href="datenschutz.html" class="legal-link">Datenschutzerklärung</a>
         </div>
