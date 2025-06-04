@@ -1,0 +1,1196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Case Studies - Devory</title>
+  <script src="https://unpkg.com/lottie-web@latest/build/player/lottie.min.js"></script>
+  <link rel="stylesheet" href="/styles.css">
+  <link rel="icon" href="devoryicon.png" type="image/x-icon">
+  <style>
+    /* Template-specific overrides */
+    .main {
+      height: 60svh !important;
+    }
+
+    .hero {
+      display: none;
+    }
+
+    .page-title-container {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+      z-index: 50;
+    }
+
+    .page-title {
+      font-size: clamp(2rem, 8vw, 4rem);
+      font-weight: 800;
+      color: #6f79a4;
+      text-shadow: 0 5px 20px rgba(0,0,0,0.1);
+      opacity: 0;
+      animation: fadeInUp 1s ease-out forwards;
+      animation-delay: 0.8s;
+    }
+
+    .nav-item.active {
+      color: #6f79a4;
+      font-weight: 600;
+    }
+
+    .nav-item.active::after {
+      width: 100%;
+    }
+  </style>
+</head>
+<body>
+    <div class="mobile-menu" id="mobileMenu">
+        <div class="mobile-menu-content">
+          <!-- Header with logo and X -->
+          <div class="mobile-menu-header">
+            <img src="/assets/devorsjy.png" alt="Devory" class="mobile-logo" />
+            <button class="mobile-close-btn" id="mobileCloseBtn">
+              <span class="close-line"></span>
+              <span class="close-line"></span>
+            </button>
+          </div>
+      
+          <!-- Main navigation -->
+          <nav class="mobile-nav">
+            <a href="/en" class="mobile-nav-item">
+              <span class="nav-number">01</span>
+              <span class="nav-text">Home</span>
+            </a>
+            <a href="/en/about" class="mobile-nav-item">
+              <span class="nav-number">02</span>
+              <span class="nav-text">About Us</span>
+            </a>
+            <a href="/en/services" class="mobile-nav-item">
+              <span class="nav-number">03</span>
+              <span class="nav-text">Services</span>
+            </a>
+            <a href="/en/projects" class="mobile-nav-item">
+              <span class="nav-number">04</span>
+              <span class="nav-text">Case Studies</span>
+            </a>
+            <a href="/en/contact" class="mobile-nav-item">
+              <span class="nav-number">05</span>
+              <span class="nav-text">Contact</span>
+            </a>
+          </nav>
+      
+          <!-- Footer -->
+          <div class="mobile-menu-footer">
+            <div class="mobile-contact">
+              <p>hello@devory.de</p>
+              <a href="tel:+4917673234507" style="color: white; font-size: 13px;">+49 6195 6737310</a>
+            </div>
+            <div class="mobile-social">
+              <a href="#" class="social-dot"></a>
+              <a href="#" class="social-dot"></a>
+              <a href="#" class="social-dot"></a>
+            </div>
+            <div class="mobile-copyright">
+              <p>&copy; 2025 Devory GmbH</p>
+            </div>
+          </div>
+        </div>
+      </div>
+  <div class="wrapper">
+    <div class="main" id="main">
+        <img src="/assets/ivorydevory.jpg" alt="Background Image" class="background-img" />
+
+        
+        <!-- Header -->
+        <header class="header" id="header">
+            <a href="/en">
+
+          <img src="/assets/devorsjy.png" alt="Logo" class="logo" />
+          </a>
+          <nav class="nav">
+            <a href="/en" class="nav-item">Home</a>
+            <a href="/en/about" class="nav-item">About Us</a>
+            <a href="/en/services" class="nav-item">Services</a>
+            <a href="/en/projects" class="nav-item">Case Studies</a>
+          </nav>
+
+          <div class="burger-menu" id="burgerMenu">
+            <span class="burger-line"></span>
+            <span class="burger-line"></span>
+            <span class="burger-line"></span>
+          </div>
+          
+          <a href="/en/contact" class="contact-btn">Get In Touch</a>
+        </header>
+
+              <!-- Page Title -->
+      <div class="page-title-container">
+        <h1 class="page-title">Success Stories</h1>
+      </div>
+        
+      </div>
+
+    <!-- Case Studies Hero Section -->
+    <section class="case-studies-hero">
+      <div class="hero-content">
+        <div class="hero-text">
+          <div class="hero-subtitle">SUCCESS STORIES</div>
+          <h2 class="hero-title">Innovative Projects That Inspire</h2>
+          <p class="hero-description">
+            From complex e-commerce platforms to AI-powered applications – discover how we've partnered with our clients to create extraordinary digital solutions. Each project tells a unique story of innovation, challenges, and remarkable success.
+          </p>
+        </div>
+        
+        <div class="hero-stats">
+          <div class="stat-item">
+            <div class="stat-number">50+</div>
+            <div class="stat-label">Successful Projects</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-number">98%</div>
+            <div class="stat-label">Client Satisfaction</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-number">15+</div>
+            <div class="stat-label">Industries</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Case Study 1: E-Commerce Platform -->
+    <section class="case-study-section">
+      <div class="case-study-content">
+        <div class="case-image">
+          <img src="/assets/shobba.jpg" alt="E-Commerce Platform Dashboard" />
+          <div class="case-overlay">
+            <div class="case-category">E-Commerce</div>
+          </div>
+        </div>
+        
+        <div class="case-details">
+          <div class="case-header">
+            <h3 class="case-title">NextGen Social Commerce Platform</h3>
+            <p class="case-subtitle">Shobsta</p>
+          </div>
+          
+          <div class="tech-stack">
+            <div class="tech-item">
+              <img src="/assets/angular.png" alt="Angular" class="tech-icon" />
+              <span class="tech-name">Angular</span>
+            </div>
+            <div class="tech-item">
+                <img src="/assets/swift.png" alt="Swift" class="tech-icon" />
+                <span class="tech-name">Swift</span>
+              </div>
+            <div class="tech-item">
+              <img src="/assets/nodejs.png" alt="Node.js" class="tech-icon" />
+              <span class="tech-name">Node.js</span>
+            </div>
+            <div class="tech-item">
+              <img src="/assets/gcp.png" alt="Google Cloud Platform" class="tech-icon" />
+              <span class="tech-name">Google Cloud</span>
+            </div>
+            <div class="tech-item">
+              <img src="/assets/postgres.png" alt="PostgreSQL" class="tech-icon" />
+              <span class="tech-name">PostgreSQL</span>
+            </div>
+          </div>
+          
+          <div class="case-description">
+            <p>
+              <strong>Shobsta</strong> is a visionary social shopping platform that elevates e-commerce to an entirely new level. Inspired by the dynamics of social networks like Instagram, Shobsta combines traditional marketplace functionality with interactive, social features that emotionally engage users, personalize experiences, and revolutionize online shopping. Through likes, comments, and personalized recommendations, Shobsta transforms online shopping into a vibrant, interactive experience.
+            </p>
+            <div class="read-more-container">
+              <button class="read-more-btn" onclick="toggleReadMore(this)">
+                <span class="btn-text">Read More</span>
+                <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M19 9l-7 7-7-7"></path>
+                </svg>
+              </button>
+              <div class="expanded-content">
+                <p>
+                  At the heart of Shobsta is a fully customizable feed that works just like social networks. Users can like, comment, or ask questions about products. Through intelligent algorithms, the feed is personalized in real-time based on interests, behavior, and location. A special highlight is the REELS system: users can upload short videos of their products to present them authentically – social commerce at its finest.
+                </p>
+                <p>
+                  Sellers can intuitively post products – supported by AI that automatically recognizes products, assigns appropriate categories, and generates professional descriptions. Additionally, Shobsta offers a unique real-time bidding system that encourages direct competition between buyers.
+                </p>
+                <p>
+                  The payment process is completely decentralized via PayPal – directly from customer to customer, without intermediaries or frozen balances. This creates trust, transparency, and efficiency. An integrated rating system ensures that user credibility is visibly reflected through collected points and reviews.
+                </p>
+                <p>
+                  Additional features like a map view for local products, a fully customizable chat with file and product sharing, intelligent notifications, and filter/sorting functions at feed and product levels make Shobsta one of the most comprehensive e-commerce solutions on the market.
+                </p>
+                <p>
+                  <strong>Technologically, Shobsta sets new standards:</strong><br>
+                  The platform is built on a modern tech stack:
+                  <ul>
+                    <li>React for highly dynamic frontend experiences</li>
+                    <li>Node.js as scalable backend infrastructure</li>
+                    <li>PostgreSQL for relational data management</li>
+                    <li>Redis for high-speed caching solutions</li>
+                    <li>Apache Kafka for real-time event streaming</li>
+                    <li>ElasticSearch for ultra-fast search results</li>
+                    <li>AI-powered product recognition, auto-categorization & description generation</li>
+                    <li>Real-time bidding system with WebSockets</li>
+                    <li>Scalable microservice architecture in Docker containers</li>
+                    <li>Cloud deployment with Kubernetes for automatic scaling</li>
+                  </ul>
+                </p>
+              </div>
+            </div>
+          </div>
+          
+          
+          <div class="case-facts">
+            <div class="fact-item">
+              <div class="fact-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <polyline points="12,6 12,12 16,14"></polyline>
+                </svg>
+              </div>
+              <div class="fact-content">
+                <span class="fact-value">6 Months</span>
+                <span class="fact-label">Development Time</span>
+              </div>
+            </div>
+            
+            <div class="fact-item">
+              <div class="fact-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                  <circle cx="9" cy="7" r="4"></circle>
+                  <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                  <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                </svg>
+              </div>
+              <div class="fact-content">
+                <span class="fact-value">2 Developers</span>
+                <span class="fact-label">Team Size</span>
+              </div>
+            </div>
+            
+            <div class="fact-item">
+              <div class="fact-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M3 3v18h18"></path>
+                  <path d="M7 12v5"></path>
+                  <path d="M12 8v9"></path>
+                  <path d="M17 6v11"></path>
+                </svg>
+              </div>
+              <div class="fact-content">
+                <span class="fact-value">+45%</span>
+                <span class="fact-label">Conversion Rate</span>
+              </div>
+            </div>
+            
+            <div class="fact-item">
+              <div class="fact-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M12 2L2 7l10 5 10-5-10-5z"></path>
+                  <path d="m2 17 10 5 10-5"></path>
+                  <path d="m2 12 10 5 10-5"></path>
+                </svg>
+              </div>
+              <div class="fact-content">
+                <span class="fact-value">Microservices</span>
+                <span class="fact-label">Architecture</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Case Study 2: Trademark Monitoring -->
+    <section class="case-study-section reverse">
+      <div class="case-study-content">
+        <div class="case-image">
+          <img src="/assets/branqovic.jpg" alt="Trademark Monitoring Platform" />
+          <div class="case-overlay">
+            <div class="case-category">Legal Tech</div>
+          </div>
+        </div>
+        
+        <div class="case-details">
+          <div class="case-header">
+            <h3 class="case-title">AI-Powered Trademark Management Platform</h3>
+            <p class="case-subtitle">branq</p>
+          </div>
+          
+          <div class="tech-stack">
+            <div class="tech-item">
+              <img src="/assets/react.png" alt="React" class="tech-icon" />
+              <span class="tech-name">React</span>
+            </div>
+            <div class="tech-item">
+              <img src="/assets/python.png" alt="Python" class="tech-icon" />
+              <span class="tech-name">Python</span>
+            </div>
+            <div class="tech-item">
+              <img src="/assets/nodejs.png" alt="Node.js" class="tech-icon" />
+              <span class="tech-name">Node.js</span>
+            </div>
+            <div class="tech-item">
+              <img src="/assets/postgres.png" alt="PostgreSQL" class="tech-icon" />
+              <span class="tech-name">PostgreSQL</span>
+            </div>
+          </div>
+          
+          <div class="case-description">
+            <p>
+              Branq revolutionizes trademark registration through an AI-powered platform that makes brand protection easier than ever before. With automated similarity checks, direct EUIPO filing, and an intuitive dashboard, Branq ensures maximum efficiency and security for intellectual property protection.
+            </p>
+            <div class="read-more-container">
+              <button class="read-more-btn" onclick="toggleReadMore(this)">
+                <span class="btn-text">Read More</span>
+                <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M19 9l-7 7-7-7"></path>
+                </svg>
+              </button>
+              <div class="expanded-content">
+                <p>
+                  Users can register their trademark Europe-wide in just minutes – without lawyers, without paperwork. Through legally trained AI, Branq automatically checks for potential conflicts with existing trademarks – visually, phonetically, and semantically. Our success rate: 99.9%.
+                </p>
+                <p>
+                  Particularly powerful is the trademark watching tool: it monitors newly registered trademarks Europe-wide and automatically warns of potential collisions. Lawyers already use Branq as a backend for their own trademark services – proof of the platform's legal depth and reliability.
+                </p>
+                <p>
+                  The entire registration process is fully automated directly with the EUIPO. Companies save thousands of dollars, avoid lengthy processes, and instead secure fast, scalable trademark protection starting at €99.
+                </p>
+              </div>
+            </div>
+          </div>
+          
+          
+          <div class="case-facts">
+            <div class="fact-item">
+              <div class="fact-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <polyline points="12,6 12,12 16,14"></polyline>
+                </svg>
+              </div>
+              <div class="fact-content">
+                <span class="fact-value">3 Months</span>
+                <span class="fact-label">Development Time</span>
+              </div>
+            </div>
+            
+            <div class="fact-item">
+              <div class="fact-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                  <circle cx="9" cy="7" r="4"></circle>
+                  <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                  <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                </svg>
+              </div>
+              <div class="fact-content">
+                <span class="fact-value">3 Experts</span>
+                <span class="fact-label">Team Size</span>
+              </div>
+            </div>
+            
+            <div class="fact-item">
+              <div class="fact-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                  <path d="M9 12l2 2 4-4"></path>
+                </svg>
+              </div>
+              <div class="fact-content">
+                <span class="fact-value">EU</span>
+                <span class="fact-label">Certified</span>
+              </div>
+            </div>
+            
+            <div class="fact-item">
+              <div class="fact-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M3 3v18h18"></path>
+                  <path d="M7 12v5"></path>
+                  <path d="M12 8v9"></path>
+                  <path d="M17 6v11"></path>
+                </svg>
+              </div>
+              <div class="fact-content">
+                <span class="fact-value">+140%</span>
+                <span class="fact-label">Efficiency Boost</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Case Study 3: Shopping App -->
+    <section class="case-study-section">
+      <div class="case-study-content">
+        <div class="case-image">
+          <img src="/assets/blejks.jpg" alt="Regional Shopping App" />
+          <div class="case-overlay">
+            <div class="case-category">Mobile App</div>
+          </div>
+        </div>
+        
+        <div class="case-details">
+          <div class="case-header">
+            <h3 class="case-title">Smart Regional Shopping Discovery App</h3>
+            <p class="case-subtitle">Blejke</p>
+          </div>
+          
+          <div class="tech-stack">
+            <div class="tech-item">
+              <img src="/assets/react.png" alt="React Native" class="tech-icon" />
+              <span class="tech-name">React Native</span>
+            </div>
+            <div class="tech-item">
+              <img src="/assets/nodejs.png" alt="Node.js" class="tech-icon" />
+              <span class="tech-name">Node.js</span>
+            </div>
+            <div class="tech-item">
+              <img src="/assets/postgres.png" alt="PostgreSQL" class="tech-icon" />
+              <span class="tech-name">PostgreSQL</span>
+            </div>
+            <div class="tech-item">
+              <img src="/assets/docker.png" alt="Docker" class="tech-icon" />
+              <span class="tech-name">Docker</span>
+            </div>
+          </div>
+          
+          <div class="case-description">
+            <p>
+              BlejKetu is an intelligent shopping app for the Balkan region that informs users in real-time about special offers and discounted products in their vicinity. With location detection, smart filtering options, and a clear map view, it revolutionizes the regional shopping experience.
+            </p>
+            <div class="read-more-container">
+              <button class="read-more-btn" onclick="toggleReadMore(this)">
+                <span class="btn-text">Read More</span>
+                <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M19 9l-7 7-7-7"></path>
+                </svg>
+              </button>
+              <div class="expanded-content">
+                <p>
+                  The app aggregates offers from thousands of retailers across the entire Balkan region and presents them sorted by distance, category, and discount. A specially developed algorithm analyzes sales data and highlights particularly attractive offers.
+                </p>
+                <p>
+                  Users can search specifically for products, save favorites, and navigate directly to nearby stores via map. The dynamic map shows all relevant stores as interactive pins, enabling quick orientation.
+                </p>
+                <p>
+                  BlejKetu offers a locally optimized user experience with automatic updates on new promotions, intelligent push notifications, and scalable infrastructure for millions of potential users throughout the region.
+                </p>
+              </div>
+            </div>
+          </div>
+          
+          
+          <div class="case-facts">
+            <div class="fact-item">
+              <div class="fact-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <polyline points="12,6 12,12 16,14"></polyline>
+                </svg>
+              </div>
+              <div class="fact-content">
+                <span class="fact-value">6 Months</span>
+                <span class="fact-label">Development Time</span>
+              </div>
+            </div>
+            
+            <div class="fact-item">
+              <div class="fact-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                  <circle cx="9" cy="7" r="4"></circle>
+                  <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                  <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                </svg>
+              </div>
+              <div class="fact-content">
+                <span class="fact-value">6 Specialists</span>
+                <span class="fact-label">Team Size</span>
+              </div>
+            </div>
+            
+            <div class="fact-item">
+              <div class="fact-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"></path>
+                </svg>
+              </div>
+              <div class="fact-content">
+                <span class="fact-value">&lt;5ms</span>
+                <span class="fact-label">Latency</span>
+              </div>
+            </div>
+            
+            <div class="fact-item">
+              <div class="fact-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                  <path d="M9 12l2 2 4-4"></path>
+                </svg>
+              </div>
+              <div class="fact-content">
+                <span class="fact-value">GDPR</span>
+                <span class="fact-label">Compliant</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Case Study 4: Admin Dashboard -->
+    <section class="case-study-section reverse">
+      <div class="case-study-content">
+        <div class="case-image">
+          <img src="/assets/blejksa.jpg" alt="Smart Admin Dashboard" />
+          <div class="case-overlay">
+            <div class="case-category">Enterprise Dashboard</div>
+          </div>
+        </div>
+        
+        <div class="case-details">
+          <div class="case-header">
+            <h3 class="case-title">Enterprise-Grade Smart Dashboard</h3>
+            <p class="case-subtitle">BlejKetu Store Portal</p>
+          </div>
+          
+          <div class="tech-stack">
+            <div class="tech-item">
+              <img src="/assets/react.png" alt="React" class="tech-icon" />
+              <span class="tech-name">React</span>
+            </div>
+            <div class="tech-item">
+              <img src="/assets/go.png" alt="Go" class="tech-icon" />
+              <span class="tech-name">Go</span>
+            </div>
+            <div class="tech-item">
+              <img src="/assets/nodejs.png" alt="Node.js" class="tech-icon" />
+              <span class="tech-name">Node.js</span>
+            </div>
+            <div class="tech-item">
+                <img src="/assets/docker.png" alt="Docker" class="tech-icon" />
+                <span class="tech-name">Docker</span>
+              </div>
+
+            <div class="tech-item">
+                <img src="/assets/postgres.png" alt="PostgreSQL" class="tech-icon" />
+                <span class="tech-name">PostgreSQL</span>
+              </div>
+              <div class="tech-item">
+                <img src="/assets/aws.png" alt="AWS" class="tech-icon" />
+                <span class="tech-name">AWS</span>
+              </div>
+          </div>
+          
+          <div class="case-description">
+            <p>
+              The powerful admin dashboard behind BlejKetu – the mission control center of the app. It enables complete control of content, user activities, and data analytics for all participating retailers across the entire Balkan region.
+            </p>
+            <div class="read-more-container">
+              <button class="read-more-btn" onclick="toggleReadMore(this)">
+                <span class="btn-text">Read More</span>
+                <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M19 9l-7 7-7-7"></path>
+                </svg>
+              </button>
+              <div class="expanded-content">
+                <p>
+                  Retailers can bulk upload new offers, edit existing products, manage branches, or launch targeted promotions – all centrally and with just a few clicks. With integrated AI, user interactions can be analyzed to identify relevant recommendations and trends early.
+                </p>
+                <p>
+                  Admins have comprehensive control over the entire ecosystem: invite or remove employees, send notifications to customers, view business reports, and receive automated warnings when offers violate guidelines.
+                </p>
+                <p>
+                  The dashboard was developed with a focus on scalability and security – with granular access rights, real-time updates, and an intuitive UI design that maintains clarity even with complex tasks.
+                </p>
+              </div>
+            </div>
+          </div>
+          
+          <div class="case-facts">
+            <div class="fact-item">
+              <div class="fact-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <polyline points="12,6 12,12 16,14"></polyline>
+                </svg>
+              </div>
+              <div class="fact-content">
+                <span class="fact-value">3 Months</span>
+                <span class="fact-label">Development Time</span>
+              </div>
+            </div>
+            
+            <div class="fact-item">
+              <div class="fact-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                  <circle cx="9" cy="7" r="4"></circle>
+                  <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                  <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                </svg>
+              </div>
+                  <div class="fact-content">
+                    <span class="fact-value">6 Developers</span>
+                    <span class="fact-label">Team Size</span>
+                  </div>
+                </div>
+                
+                <div class="fact-item">
+                  <div class="fact-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <path d="M12 2a2 2 0 0 1 2 2c0 .74-.4 1.39-1 1.73V7h4a2 2 0 0 1 2 2v1.28c.6.35 1 .98 1 1.72 0 .74-.4 1.39-1 1.73V15a2 2 0 0 1-2 2h-4v1.28c.6.35 1 .98 1 1.72a2 2 0 1 1-4 0c0-.74.4-1.39 1-1.73V17H7a2 2 0 0 1-2-2v-1.28c-.6-.35-1-.98-1-1.72 0-.74.4-1.39 1-1.73V9a2 2 0 0 1 2-2h4V5.73c-.6-.35-1-.98-1-1.73a2 2 0 0 1 2-2Z"></path>
+                    </svg>
+                  </div>
+                  <div class="fact-content">
+                    <span class="fact-value">50,000+</span>
+                    <span class="fact-label">Active Offers</span>
+                  </div>
+                </div>
+                
+                <div class="fact-item">
+                  <div class="fact-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <path d="M3 3v18h18"></path>
+                      <path d="M7 12v5"></path>
+                      <path d="M12 8v9"></path>
+                      <path d="M17 6v11"></path>
+                    </svg>
+                  </div>
+                  <div class="fact-content">
+                    <span class="fact-value">25%</span>
+                    <span class="fact-label">Average Savings</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+    
+        <!-- Case Study 5: AI Content Platform -->
+        <section class="case-study-section">
+          <div class="case-study-content">
+            <div class="case-image">
+              <video src="/assets/particles_2.mp4" autoplay playsinline loop muted alt="AI Content Generation Platform" >
+              <div class="case-overlay">
+                <div class="case-category">AI / Machine Learning</div>
+              </div>
+            </div>
+            
+            <div class="case-details">
+              <div class="case-header">
+                <h3 class="case-title">AI-Powered Prospectus Analysis Engine</h3>
+                <p class="case-subtitle">ProspAI</p>
+              </div>
+              
+              <div class="tech-stack">
+                <div class="tech-item">
+                  <img src="/assets/nextjs.png" alt="Next.js" class="tech-icon" />
+                  <span class="tech-name">Next.js</span>
+                </div>
+                <div class="tech-item">
+                  <img src="/assets/python.png" alt="Python" class="tech-icon" />
+                  <span class="tech-name">Python</span>
+                </div>
+                <div class="tech-item">
+                  <img src="/assets/tensorflow.png" alt="TensorFlow" class="tech-icon" />
+                  <span class="tech-name">TensorFlow</span>
+                </div>
+                <div class="tech-item">
+                  <img src="/assets/openai.png" alt="OpenAI" class="tech-icon" />
+                  <span class="tech-name">OpenAI API</span>
+                </div>
+              </div>
+              <div class="case-description">
+                <p>
+                  ProspAI – our custom AI solution for automated recognition of products, prices, and offers from digital prospectuses. Built on YOLOv8 and developed in Python, this system sets new standards in speed and precision for retail intelligence.
+                </p>
+                <div class="read-more-container">
+                  <button class="read-more-btn" onclick="toggleReadMore(this)">
+                    <span class="btn-text">Read More</span>
+                    <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <path d="M19 9l-7 7-7-7"></path>
+                    </svg>
+                  </button>
+                  <div class="expanded-content">
+                    <p>
+                      ProspAI recognizes products, prices, and discount labels on promotional pages at lightning speed – with over 98% accuracy. Thanks to a fine-tuned YOLOv8 model, the AI can not only extract text but also visually recognize individual products, precisely crop them, and categorize them – completely without manual post-processing.
+                    </p>
+                    <p>
+                      The system was specifically developed to analyze several hundred prospectus pages within seconds. In benchmark tests, ProspAI processed over 200 web pages in under 10 seconds. This makes it not only one of the fastest but also most reliable systems of its kind in the retail technology sector.
+                    </p>
+                    <p>
+                      The extracted data flows directly into our offers backend and enables automatic publication of top deals on BlejKetu – fully integrated, scalable, and 100% automated.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="case-facts">
+                <div class="fact-item">
+                  <div class="fact-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <circle cx="12" cy="12" r="10"></circle>
+                      <polyline points="12,6 12,12 16,14"></polyline>
+                    </svg>
+                  </div>
+                  <div class="fact-content">
+                    <span class="fact-value">10 Months</span>
+                    <span class="fact-label">Development Time</span>
+                  </div>
+                </div>
+                
+                <div class="fact-item">
+                  <div class="fact-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                      <circle cx="9" cy="7" r="4"></circle>
+                      <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                      <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                    </svg>
+                  </div>
+                  <div class="fact-content">
+                    <span class="fact-value">9 AI Experts</span>
+                    <span class="fact-label">Team Size</span>
+                  </div>
+                </div>
+                
+                <div class="fact-item">
+                  <div class="fact-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <path d="M12 2a2 2 0 0 1 2 2c0 .74-.4 1.39-1 1.73V7h4a2 2 0 0 1 2 2v1.28c.6.35 1 .98 1 1.72 0 .74-.4 1.39-1 1.73V15a2 2 0 0 1-2 2h-4v1.28c.6.35 1 .98 1 1.72a2 2 0 1 1-4 0c0-.74.4-1.39 1-1.73V17H7a2 2 0 0 1-2-2v-1.28c-.6-.35-1-.98-1-1.72 0-.74.4-1.39 1-1.73V9a2 2 0 0 1 2-2h4V5.73c-.6-.35-1-.98-1-1.73a2 2 0 0 1 2-2Z"></path>
+                    </svg>
+                  </div>
+                  <div class="fact-content">
+                    <span class="fact-value">25</span>
+                    <span class="fact-label">Languages</span>
+                  </div>
+                </div>
+                
+                <div class="fact-item">
+                  <div class="fact-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <path d="M3 3v18h18"></path>
+                      <path d="M7 12v5"></path>
+                      <path d="M12 8v9"></path>
+                      <path d="M17 6v11"></path>
+                    </svg>
+                  </div>
+                  <div class="fact-content">
+                    <span class="fact-value">+300%</span>
+                    <span class="fact-label">Productivity Gain</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+    
+        <!-- Contact Form Section -->
+        <section class="contact-section">
+          <div class="contact-content">
+            <!-- Left Side: Cool Info -->
+            <div class="contact-info">
+              <div class="info-header">
+                <div class="info-subtitle">START YOUR PROJECT</div>
+                <h2 class="info-title">Ready for Your Own Success Story?</h2>
+                <p class="info-description">Let's collaborate to develop the next innovative solution that will transform your business and revolutionize your industry.</p>
+              </div>
+    
+              <div class="info-features">
+                <div class="feature-item">
+                  <div class="feature-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                    </svg>
+                  </div>
+                  <div class="feature-content">
+                    <h4>Strategy Workshop</h4>
+                    <p>Complimentary workshop to analyze your challenges and objectives</p>
+                  </div>
+                </div>
+    
+                <div class="feature-item">
+                  <div class="feature-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                      <path d="M9 12l2 2 4-4"></path>
+                    </svg>
+                  </div>
+                  <div class="feature-content">
+                    <h4>Proof of Concept</h4>
+                    <p>Development of a functional prototype to validate your idea</p>
+                  </div>
+                </div>
+    
+                <div class="feature-item">
+                  <div class="feature-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <path d="M14 9V5a3 3 0 0 0-6 0v4"></path>
+                      <rect x="2" y="9" width="20" height="11" rx="2" ry="2"></rect>
+                    </svg>
+                  </div>
+                  <div class="feature-content">
+                    <h4>Agile Development</h4>
+                    <p>Iterative development with regular reviews and adaptations</p>
+                  </div>
+                </div>
+    
+                <div class="feature-item">
+                  <div class="feature-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <path d="M9 11l3 3L22 4"></path>
+                      <path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"></path>
+                    </svg>
+                  </div>
+                  <div class="feature-content">
+                    <h4>Long-term Support</h4>
+                    <p>Continuous development and support after launch</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+    
+            <!-- Right Side: Contact Form -->
+            <div class="contact-form">
+              <form class="form-container" id="contactForm">
+                <div class="form-group">
+                  <label for="name" class="form-label">Name *</label>
+                  <input type="text" id="name" name="name" class="form-input" required>
+                </div>
+    
+                <div class="form-group">
+                  <label for="email" class="form-label">Email Address *</label>
+                  <input type="email" id="email" name="email" class="form-input" required>
+                </div>
+    
+                <div class="form-group">
+                  <label for="phone" class="form-label">Phone Number</label>
+                  <input type="tel" id="phone" name="phone" class="form-input">
+                </div>
+    
+                <div class="form-group">
+                  <label for="project_type" class="form-label">Project Type *</label>
+                  <select id="project_type" name="project_type" class="form-input" required>
+                    <option value="">Please select...</option>
+                    <option value="ecommerce">E-Commerce Platform</option>
+                    <option value="healthcare">Healthcare App</option>
+                    <option value="fintech">FinTech Solution</option>
+                    <option value="iot">IoT / Smart City</option>
+                    <option value="ai-ml">AI / Machine Learning</option>
+                    <option value="enterprise">Enterprise Software</option>
+                    <option value="startup-mvp">Startup MVP</option>
+                    <option value="other">Other</option>
+                  </select>
+                </div>
+    
+                <div class="form-group">
+                  <label for="project" class="form-label">Project Vision *</label>
+                  <textarea id="project" name="project" class="form-textarea" rows="5" placeholder="Describe your vision, goals, and challenges you want to solve..." required></textarea>
+                </div>
+    
+                <div class="form-checkbox-group">
+                  <label class="checkbox-container">
+                    <input type="checkbox" id="case_study" name="case_study" class="checkbox-input">
+                    <span class="checkbox-custom"></span>
+                    <span class="checkbox-text">
+                      I'm interested in a detailed case study for a similar project
+                    </span>
+                  </label>
+                </div>
+    
+                <button type="submit" class="submit-btn">
+                  <span class="btn-text">Request Project Workshop</span>
+                  <div class="btn-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <path d="M7 17L17 7"></path>
+                      <path d="M7 7h10v10"></path>
+                    </svg>
+                  </div>
+                </button>
+    
+                <p class="form-note">
+                  By submitting, you agree to our 
+                  <a href="/en/privacy" class="form-link">Privacy Policy</a>.
+                </p>
+              </form>
+            </div>
+          </div>
+        </section>
+    
+    <!-- Footer Section -->
+    <footer class="footer">
+        <div class="footer-content">
+          <!-- Top Footer -->
+          <div class="footer-top">
+            <!-- Logo & Description -->
+            <div class="footer-brand">
+              <div class="footer-logo" style="cursor: pointer;">
+                <a href="/en">
+                <img src="/assets/devorsjy.png" alt="Devory Logo" />
+                </a>
+              </div>
+              <p class="footer-description">
+                Modern software solutions with integrated legal compliance. 
+                We develop the digital future – GDPR-compliant and future-ready.
+              </p>
+            </div>
+      
+            <!-- Navigation Links -->
+            <div class="footer-nav">
+              <div class="footer-section">
+                <h4 class="footer-title">Company</h4>
+                <ul class="footer-links">
+                  <li><a href="/en/about" class="footer-link">About Us</a></li>
+                  <li><a href="/en/services" class="footer-link">Services</a></li>
+                  <li><a href="/en/projects" class="footer-link">Case Studies</a></li>
+                </ul>
+              </div>
+      
+      
+              <div class="footer-section">
+                <h4 class="footer-title">Support</h4>
+                <ul class="footer-links">
+                  <li><a href="/en/contact" class="footer-link">Contact</a></li>
+                  <li><a href="/en/faq" class="footer-link">FAQ</a></li>
+                </ul>
+              </div>
+      
+              <div class="footer-section">
+                <h4 class="footer-title">Legal</h4>
+                <ul class="footer-links">
+                  <li><a href="/en/imprint" class="footer-link">Imprint</a></li>
+                  <li><a href="/en/privacy" class="footer-link">Privacy Policy</a></li>
+                  <li><a href="/en/terms" class="footer-link">Terms of Service</a></li>
+                  <li><a href="/en/cookies" class="footer-link">Cookie Policy</a></li>
+                </ul>
+              </div>
+            </div>
+      
+            <!-- Contact Info -->
+            <div class="footer-contact">
+              <h4 class="footer-title">Contact</h4>
+              <div class="contact-info">
+                <div class="contact-item">
+                  <div class="contact-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                      <circle cx="12" cy="10" r="3"></circle>
+                    </svg>
+                  </div>
+                  <div class="contact-text">
+                    <span>Devory GmbH</span>
+                    <span>Frankfurter Str. 84</span>
+                    <span>65779 Kelkheim (Taunus)</span>
+                    <span>Germany</span>
+                  </div>
+                </div>
+      
+                <div class="contact-item">
+                  <div class="contact-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                      <polyline points="22,6 12,13 2,6"></polyline>
+                    </svg>
+                  </div>
+                  <div class="contact-text">
+                    <a href="mailto:hello@devory.de" class="contact-link">hello@devory.de</a>
+                  </div>
+                </div>
+      
+                <div class="contact-item">
+                  <div class="contact-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                    </svg>
+                  </div>
+                  <div class="contact-text">
+                    <a href="tel:+4930123456789" class="contact-link">+49 6195 6737310</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+      
+          <!-- Bottom Footer -->
+          <div class="footer-bottom">
+            <div class="footer-bottom-content">
+              <div class="footer-copyright">
+                <p>&copy; 2025 Devory GmbH. All rights reserved.</p>
+              </div>
+              
+              <div class="footer-legal-links">
+                <a href="/en/imprint" class="legal-link">Imprint</a>
+                <span class="separator">•</span>
+                <a href="/en/privacy" class="legal-link">Privacy Policy</a>
+              </div>
+      
+              <div class="footer-social">
+                <a href="/" class="social-link" aria-label="LinkedIn">
+                  <svg viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                  </svg>
+                </a>
+                <a href="/" class="social-link" aria-label="GitHub">
+                  <svg viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                  </svg>
+                </a>
+                <a href="/" class="social-link" aria-label="Twitter">
+                  <svg viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/>
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+      </div>
+    
+      <script>
+        document.addEventListener('DOMContentLoaded', function() {
+          const form = document.getElementById('contactForm');
+          const submitBtn = form.querySelector('.submit-btn');
+          const btnText = submitBtn.querySelector('.btn-text');
+          const btnIcon = submitBtn.querySelector('.btn-icon');
+          
+          // Original button state
+          const originalText = btnText.textContent;
+          const originalIcon = btnIcon.innerHTML;
+          
+          form.addEventListener('submit', async function(e) {
+            e.preventDefault(); // THIS STOPS THE PAGE REFRESH!
+            
+            // Get form data
+            const formData = new FormData(form);
+            const data = {
+              name: formData.get('name'),
+              email: formData.get('email'),
+              phone: formData.get('phone'),
+              project: formData.get('project'),
+              case_study: formData.get('case_study') === 'on'
+            };
+            
+            // Set loading state
+            setButtonState('loading');
+            
+            try {
+              const response = await fetch('/api/contact', {
+                method: 'POST',
+                headers: {
+                  'Content-Type': 'application/json',
+                },
+                body: JSON.stringify(data)
+              });
+              
+              const result = await response.json();
+              
+              if (response.ok) {
+                setButtonState('success');
+                showNotification('success', result.message);
+                form.reset();
+                setTimeout(() => setButtonState('default'), 3000);
+              } else {
+                setButtonState('error');
+                showNotification('error', result.error);
+                setTimeout(() => setButtonState('default'), 3000);
+              }
+            } catch (error) {
+              setButtonState('error');
+              showNotification('error', 'Network error. Please try again later.');
+              setTimeout(() => setButtonState('default'), 3000);
+            }
+          });
+          
+          function setButtonState(state) {
+            submitBtn.disabled = state !== 'default';
+            
+            switch(state) {
+              case 'loading':
+                btnText.textContent = 'Sending...';
+                btnIcon.innerHTML = `<svg class="animate-spin" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2v4m0 12v4M4.93 4.93l2.83 2.83m8.49 8.49l2.83 2.83M2 12h4m12 0h4M4.93 19.07l2.83-2.83m8.49-8.49l2.83-2.83"/></svg>`;
+                submitBtn.style.background = 'linear-gradient(135deg, #94a3b8, #64748b)';
+                break;
+              case 'success':
+                btnText.textContent = 'Sent!';
+                btnIcon.innerHTML = `<svg class="animate-bounce" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>`;
+                submitBtn.style.background = 'linear-gradient(135deg, #10b981, #059669)';
+                break;
+              case 'error':
+                btnText.textContent = 'Error';
+                btnIcon.innerHTML = `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="15" y1="9" x2="9" y2="15"/><line x1="9" y1="9" x2="15" y2="15"/></svg>`;
+            submitBtn.style.background = 'linear-gradient(135deg, #ef4444, #dc2626)';
+            break;
+          default:
+            btnText.textContent = originalText;
+            btnIcon.innerHTML = originalIcon;
+            submitBtn.style.background = 'linear-gradient(135deg, #6f79a4, #64748b)';
+            break;
+        }
+      }
+      
+      function showNotification(type, message) {
+        const existingNotification = document.querySelector('.form-notification');
+        if (existingNotification) existingNotification.remove();
+        
+        const notification = document.createElement('div');
+        notification.className = `form-notification ${type}`;
+        notification.innerHTML = `
+          <div class="notification-content">
+            <div class="notification-icon">
+              ${type === 'success' ? 
+                '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>' :
+                '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="15" y1="9" x2="9" y2="15"/><line x1="9" y1="9" x2="15" y2="15"/></svg>'
+              }
+            </div>
+            <p>${message}</p>
+            <button class="notification-close" onclick="this.parentElement.parentElement.remove()">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+            </button>
+          </div>
+        `;
+        
+        form.appendChild(notification);
+        setTimeout(() => notification.classList.add('show'), 100);
+        setTimeout(() => {
+          if (notification.parentElement) {
+            notification.classList.remove('show');
+            setTimeout(() => notification.remove(), 300);
+          }
+        }, 5000);
+      }
+    });
+    </script>
+    
+  <script src="./script.js"></script>
+  <script>
+    function toggleReadMore(button) {
+      const container = button.parentElement;
+      const expandedContent = container.querySelector('.expanded-content');
+      const btnText = button.querySelector('.btn-text');
+      const btnIcon = button.querySelector('.btn-icon');
+      
+      if (expandedContent.style.display === 'block') {
+        expandedContent.style.display = 'none';
+        btnText.textContent = 'Read More';
+        btnIcon.style.transform = 'rotate(0deg)';
+      } else {
+        expandedContent.style.display = 'block';
+        btnText.textContent = 'Show Less';
+        btnIcon.style.transform = 'rotate(180deg)';
+      }
+    }
+  </script>
+</body>
+</html>
