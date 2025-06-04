@@ -384,6 +384,32 @@ class LanguageManager {
     this.init();
   }
 
+
+
+  redirectToLanguage(lang) {
+    const currentPath = window.location.pathname;
+    let newPath;
+
+    console.log('redirecting to language');
+    if (lang === 'en') {
+      // Redirect to /en
+      if (currentPath === '/' || currentPath === '/index.html') {
+        newPath = '/en/';
+      } else {
+        newPath = '/en' + currentPath;
+      }
+    } else {
+      // Redirect to German (root)
+      if (currentPath.startsWith('/en')) {
+        newPath = currentPath.replace('/en', '') || '/';
+      } else {
+        newPath = '/';
+      }
+    }
+
+    window.location.href = newPath;
+  }
+
   init() {
 
     // Setup language switchers
@@ -407,6 +433,7 @@ class LanguageManager {
     const langItems = document.querySelectorAll('.lang-item');
     langItems.forEach(item => {
       item.addEventListener('click', (e) => {
+        console.log('language clicekd');
         const lang = e.currentTarget.dataset.lang;
         this.saveLanguagePreference(lang);
         this.handleLanguageChange(lang);

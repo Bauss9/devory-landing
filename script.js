@@ -1,7 +1,7 @@
 const main = document.getElementById('main');
 const header = document.getElementById('header');
 
-const birdJson = 'birdanimone.json';
+const birdJson = './assets/birdanimone.json';
 
 // Track occupied lanes to prevent overlap
 const occupiedLanes = new Set();
