@@ -86,7 +86,7 @@ export default async function handler(req, res) {
           Ihr Devory Team</p>
           
           <hr>
-          <p><small>Devory GmbH | Frankfurter Str. 84 | 65779 Kelkheim (Taunus)</small></p>
+          <p><small>Devory IT GmbH | Frankfurter Str. 84 | 65779 Kelkheim (Taunus)</small></p>
         `,
       });
   
